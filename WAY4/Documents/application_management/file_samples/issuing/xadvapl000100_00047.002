@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationFile>
+    <FileHeader>
+        <FormatVersion>2.0</FormatVersion>
+        <Sender>0001</Sender>
+        <CreationDate>2012-08-17</CreationDate>
+        <CreationTime>10:53:16</CreationTime>
+        <Number>47</Number>
+        <Institution>0001</Institution>
+    </FileHeader>
+    <ApplicationsList>
+        <Application>
+            <RegNumber>AA_XML_47_002</RegNumber>
+            <ObjectType>Contract</ObjectType>
+            <ActionType>Update</ActionType>
+            <ObjectFor>
+                <ContractIDT>
+                    <ContractNumber>4015500111100008</ContractNumber>
+                    <Client>
+                        <ClientInfo>
+                            <ShortName>UPD_AA_05_01_short_1234568912456</ShortName>
+                        </ClientInfo>
+                    </Client>
+                </ContractIDT>
+            </ObjectFor>
+            <Data>
+                <Contract>
+                    <ContractIDT>
+                        <Client>
+                            <ClientInfo>
+                                <ClientNumber>CN 10000001</ClientNumber>
+                                <ShortName>Test Client 10000001</ShortName>
+                            </ClientInfo>
+                        </Client>
+                    </ContractIDT>
+                </Contract>
+            </Data>
+        </Application>
+    </ApplicationsList>
+</ApplicationFile>

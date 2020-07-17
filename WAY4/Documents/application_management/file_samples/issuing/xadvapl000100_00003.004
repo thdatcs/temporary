@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationFile>
+    <FileHeader>
+        <FormatVersion>2.0</FormatVersion>
+        <Sender>000100</Sender>
+        <CreationDate>2012-03-07</CreationDate>
+        <CreationTime>01:02:30</CreationTime>
+        <Number>03</Number>
+        <Institution>0001</Institution>
+    </FileHeader>
+    <ApplicationsList>
+        <Application>
+            <RegNumber>AA_XML_03_004</RegNumber>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>Contract</ObjectType>
+            <ActionType>Add</ActionType>
+            <ObjectFor>
+                <ClientIDT>
+                    <ClientInfo>
+                        <RegNumberType>RegNumberType</RegNumberType>
+                        <RegNumber>XML_AA_17_reg</RegNumber>
+                    </ClientInfo>
+                </ClientIDT>
+            </ObjectFor>
+            <Data>
+                <Contract>
+                    <ContractIDT>
+                        <ContractNumber>XML-AA-010</ContractNumber>
+                    </ContractIDT>
+                    <ContractName>XML_AA_123456789</ContractName>
+                    <Product>
+                        <ProductCode1>IssMain</ProductCode1>
+                    </Product>
+                    <DateOpen>2012-01-24</DateOpen>
+                    <CreditLimit>
+                        <FinanceLimit>
+                            <Amount>100</Amount>
+                            <Currency>RUR</Currency>
+                        </FinanceLimit>
+                        <ReasonDetails>Reason details for credit limit</ReasonDetails>
+                    </CreditLimit>
+                </Contract>
+            </Data>
+        </Application>
+    </ApplicationsList>
+</ApplicationFile>

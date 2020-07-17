@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationFile>
+    <FileHeader>
+        <FormatVersion>2.0</FormatVersion>
+        <Sender>000100</Sender>
+        <CreationDate>2012-02-29</CreationDate>
+        <CreationTime>01:02:30</CreationTime>
+        <Number>15</Number>
+        <Institution>0001</Institution>
+    </FileHeader>
+    <ApplicationsList>
+        <Application>
+            <RegNumber>AA_XML_15_001</RegNumber>
+            <Institution>0001</Institution>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>CustomerClassifier</ObjectType>
+            <ActionType>AddOrUpdate</ActionType>
+            <ObjectFor>
+                <ClientIDT>
+                    <ClientInfo>
+                        <ClientNumber>XML_AA_01_num</ClientNumber>
+                        <ShortName>XML_AA_01_short</ShortName>
+                    </ClientInfo>
+                </ClientIDT>
+            </ObjectFor>
+            <Data>
+                <CustomerClassifiers>
+                    <Classifier>
+                        <Code>AGE</Code>
+                        <Value>YOUNG</Value>
+                    </Classifier>
+                    <Classifier>
+                        <Code>INC_LEVEL</Code>
+                        <Value>HIGH</Value>
+                    </Classifier>
+                    <Classifier>
+                        <Code>VIP</Code>
+                        <Value>YES</Value>
+                        <ReasonDetails>Set VIP status</ReasonDetails>
+                        <ActivityPeriod>
+                            <DateFrom>2014-08-01</DateFrom>
+                            <DateTo>2015-08-01</DateTo>
+                        </ActivityPeriod>
+                    </Classifier>
+                </CustomerClassifiers>
+            </Data>
+        </Application>
+    </ApplicationsList>
+</ApplicationFile>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationFile>
+    <FileHeader>
+        <FormatVersion>2.0</FormatVersion>
+        <Sender>000100</Sender>
+        <CreationDate>2012-03-11</CreationDate>
+        <CreationTime>01:02:30</CreationTime>
+        <Number>05</Number>
+        <Institution>0001</Institution>
+    </FileHeader>
+    <ApplicationsList>
+        <Application>
+            <RegNumber>AA_XML_05_004</RegNumber>
+            <Institution>0001</Institution>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>Contract</ObjectType>
+            <ActionType>Update</ActionType>
+            <ObjectFor>
+                <ContractIDT>
+                    <ContractNumber>4015500170547768</ContractNumber>
+                    <IdentifierFor>
+                        <Top>Yes</Top>
+                    </IdentifierFor>
+                    <Client>
+                        <ClientInfo>
+                            <ShortName>XML_AA_17_short</ShortName>
+                        </ClientInfo>
+                    </Client>
+                </ContractIDT>
+            </ObjectFor>
+            <Data>
+                <Contract>
+                    <CommentText>Add comment for contract 4015500120700178</CommentText>
+                </Contract>
+            </Data>
+        </Application>
+    </ApplicationsList>
+</ApplicationFile>

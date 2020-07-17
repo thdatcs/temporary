@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<ApplicationFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///Q:/OW_HOMES/Cards/03_44_29_14/client/shared/pipes/xsd/OffLine/WAY4ApplFile.xsd">
+	<FileHeader>
+		<FormatVersion>2.0</FormatVersion>
+		<Sender>000100</Sender>
+		<CreationDate>2016-11-18</CreationDate>
+		<CreationTime>01:02:30</CreationTime>
+		<Number>15</Number>
+		<Institution>0001</Institution>
+	</FileHeader>
+	<ApplicationsList>
+		<Application>
+			<RegNumber>AA_XML_33_015</RegNumber>
+			<OrderDprt>0101</OrderDprt>
+			<ObjectType>Instalment</ObjectType>
+			<ActionType>Close</ActionType>
+			<ObjectFor>
+				<ContractIDT>
+					<ContractNumber>4015500571183635</ContractNumber>
+					<Client>
+						<ClientInfo>
+							<ShortName>TestInstAppl_short</ShortName>
+						</ClientInfo>
+					</Client>
+				</ContractIDT>
+			</ObjectFor>
+			<Data>
+				<Instalment>
+					<InstalmentIDT>123456789</InstalmentIDT>
+				</Instalment>
+			</Data>
+		</Application>
+	</ApplicationsList>
+</ApplicationFile>

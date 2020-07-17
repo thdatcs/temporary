@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationFile>
+    <FileHeader>
+        <FormatVersion>2.0</FormatVersion>
+        <Sender>000100</Sender>
+        <CreationDate>2016-05-01</CreationDate>
+        <CreationTime>01:02:30</CreationTime>
+        <Number>06</Number>
+        <Institution>0001</Institution>
+    </FileHeader>
+    <ApplicationsList>
+        <Application>
+            <RegNumber>AA_XML_19_001</RegNumber>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>ClientParameter</ObjectType>
+            <ActionType>AddOrUpdate</ActionType>
+            <ObjectFor>
+                <ClientIDT>
+                    <ClientInfo>
+                        <ClientNumber>XML_AA_19_001_num</ClientNumber>
+                        <ShortName>XML_AA_19_001_short</ShortName>
+                    </ClientInfo>
+                </ClientIDT>
+            </ObjectFor>
+            <Data>
+                <CustomerParameters>
+                    <Parameter>
+                        <Code>AMOUNTPARMCL</Code>
+                        <Value>50</Value>
+                    </Parameter>
+                    <Parameter>
+                        <Code>COUNTERPARMCL</Code>
+                        <Value>5</Value>
+                    </Parameter>
+                    <Parameter>
+                        <Code>PERCENTPARMCL</Code>
+                        <Value>10</Value>
+                    </Parameter>
+                    <Parameter>
+                        <Code>STRINGPARMCL</Code>
+                        <Value>abcd</Value>
+                    </Parameter>
+                </CustomerParameters>
+            </Data>
+        </Application>
+    </ApplicationsList>
+</ApplicationFile>

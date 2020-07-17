@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationFile>
+    <FileHeader>
+        <FormatVersion>2.0</FormatVersion>
+        <Sender>000100</Sender>
+        <CreationDate>2005-01-01</CreationDate>
+        <CreationTime>01:02:30</CreationTime>
+        <Number>42</Number>
+        <Institution>0001</Institution>
+    </FileHeader>
+    <ApplicationsList>
+        <Application>
+            <RegNumber>AA_XML_42_002</RegNumber>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>StopList</ObjectType>
+            <ActionType>Add</ActionType>
+            <ObjectFor>
+                <ContractIDT>
+                    <ContractNumber>1000030177619124</ContractNumber>
+                    <Client>
+                        <ClientInfo>
+                            <ShortName>&lt;&lt;&lt;NONE&gt;&gt;&gt;</ShortName>
+                        </ClientInfo>
+                    </Client>
+                </ContractIDT>
+            </ObjectFor>
+            <Data>
+                <StopList>
+                    <Channel>V</Channel>
+                    <Area>EMEA</Area>
+                    <RequestCode>41</RequestCode>
+                    <ExpiryDate>2013-09-08</ExpiryDate>
+                    <CardSeqNumber>2</CardSeqNumber>
+                    <CardExpiryDate>0910</CardExpiryDate>
+                </StopList>
+            </Data>
+        </Application>
+    </ApplicationsList>
+</ApplicationFile>

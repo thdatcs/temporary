@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationFile>
+    <FileHeader>
+        <FormatVersion>2.0</FormatVersion>
+        <Sender>000100</Sender>
+        <CreationDate>2012-02-20</CreationDate>
+        <CreationTime>01:02:30</CreationTime>
+        <Number>02</Number>
+        <Institution>0001</Institution>
+    </FileHeader>
+    <ApplicationsList>
+        <Application>
+            <RegNumber>AA_XML_02_002</RegNumber>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>Contract</ObjectType>
+            <ActionType>Update</ActionType>
+            <ObjectFor>
+                <ContractIDT>
+                    <ContractNumber>XML-AA-001</ContractNumber>
+                    <Client>
+                        <ClientInfo>
+                            <ShortName>XML_AA_01_short</ShortName>
+                        </ClientInfo>
+                    </Client>
+                </ContractIDT>
+            </ObjectFor>
+            <Data>
+                <Contract>
+                    <ContractIDT>
+                        <ContractNumber>XML-AA-001</ContractNumber>
+                        <RBSNumber>XML-AA-001-rbs_12345678912345678</RBSNumber>
+                    </ContractIDT>
+                    <ContractName>XML_AA_ConNam_123456789123456789</ContractName>
+                    <CommentText>NewCommentText</CommentText>
+                    <Product>
+                        <ProductCode1>IssMain</ProductCode1>
+                    </Product>
+                    <DateOpen>2012-01-24</DateOpen>
+                    <CreditLimit>
+                        <FinanceLimit>
+                            <Amount>150</Amount>
+                            <Currency>RUR</Currency>
+                        </FinanceLimit>
+                        <ReasonDetails>New Reason details for credit limit</ReasonDetails>
+                    </CreditLimit>
+                    <AddContractInfo>
+                        <AddInfo01>new_1_3456789qwerty</AddInfo01>
+                        <AddInfo02>new_2_3456789abcdefg</AddInfo02>
+                        <AddDate01>2000-08-13</AddDate01>
+                    </AddContractInfo>
+                </Contract>
+            </Data>
+        </Application>
+    </ApplicationsList>
+</ApplicationFile>

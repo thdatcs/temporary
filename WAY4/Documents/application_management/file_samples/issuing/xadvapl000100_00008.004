@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationFile>
+    <FileHeader>
+        <FormatVersion>2.0</FormatVersion>
+        <Sender>000100</Sender>
+        <CreationDate>2012-03-11</CreationDate>
+        <CreationTime>01:02:30</CreationTime>
+        <Number>08</Number>
+        <Institution>0001</Institution>
+    </FileHeader>
+    <ApplicationsList>
+        <Application>
+            <RegNumber>AA_XML_08_004</RegNumber>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>Relation</ObjectType>
+            <ActionType>Update</ActionType>
+            <ObjectFor>
+                <ContractIDT>
+                    <ContractNumber>4015500178155580</ContractNumber>
+                    <Relation>20</Relation>
+                    <Client>
+                        <ClientInfo>
+                            <ShortName>XML_AA_01_short</ShortName>
+                        </ClientInfo>
+                    </Client>
+                </ContractIDT>
+            </ObjectFor>
+            <Data>
+                <CardRelation>
+                    <IsActive>No</IsActive>
+                </CardRelation>
+            </Data>
+        </Application>
+    </ApplicationsList>
+</ApplicationFile>
