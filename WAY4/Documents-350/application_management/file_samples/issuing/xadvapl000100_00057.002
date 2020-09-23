@@ -1,0 +1,33 @@
+<UFXMsg direction="Rq" msg_type="Application" version="2.0">
+    <MsgId>AAA-555-333-EEE-23124141</MsgId>
+    <Source app="Web"/>
+    <MsgData>
+        <Application>
+            <RegNumber>AA_XML_09_052</RegNumber>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>StopList</ObjectType>
+            <ActionType>Delete</ActionType>
+            <ObjectFor>
+                <ContractIDT>
+                    <ContractNumber>1000030177619124</ContractNumber>
+                    <Client>
+                        <ClientInfo>
+                            <ShortName>&lt;&lt;&lt;NONE&gt;&gt;&gt;</ShortName>
+                        </ClientInfo>
+                    </Client>
+                </ContractIDT>
+            </ObjectFor>
+            <Data>
+                <StopList>
+                    <Channel>V</Channel>
+                    <Area>EMEA</Area>
+                    <RequestCode>41</RequestCode>
+                    <RequestGroup>Request_group</RequestGroup>
+                    <ExpiryDate>2019-21-11</ExpiryDate>
+                    <CardSeqNumber>2</CardSeqNumber>
+                    <CardExpiryDate>0921</CardExpiryDate>
+                </StopList>
+            </Data>
+        </Application>
+    </MsgData>
+</UFXMsg>

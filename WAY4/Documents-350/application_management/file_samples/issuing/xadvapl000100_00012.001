@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationFile>
+    <FileHeader>
+        <FormatVersion>2.0</FormatVersion>
+        <Sender>000100</Sender>
+        <CreationDate>2012-02-17</CreationDate>
+        <CreationTime>01:02:30</CreationTime>
+        <Number>12</Number>
+        <Institution>0001</Institution>
+    </FileHeader>
+    <ApplicationsList>
+        <Application>
+            <RegNumber>AA_XML_12_001</RegNumber>
+            <Institution>0001</Institution>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>ClientAffiliation</ObjectType>
+            <ActionType>Disable</ActionType>
+            <ObjectFor>
+                <ClientIDT>
+                    <ClientInfo>
+                        <ClientNumber>XML_AA_01_num</ClientNumber>
+                        <ShortName>XML_AA_01_short</ShortName>
+                    </ClientInfo>
+                </ClientIDT>
+            </ObjectFor>
+            <Data>
+                <AffiliationClient>
+                    <Type>Linked Client</Type>
+                    <Client>
+                        <ClientInfo>
+                            <ClientNumber>XML_AA_02_num</ClientNumber>
+                            <ShortName>XML_AA_02_short</ShortName>
+                        </ClientInfo>
+                    </Client>
+                </AffiliationClient>
+            </Data>
+        </Application>
+    </ApplicationsList>
+</ApplicationFile>

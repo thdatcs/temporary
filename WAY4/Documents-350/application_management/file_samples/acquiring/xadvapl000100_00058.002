@@ -1,0 +1,29 @@
+<UFXMsg direction="Rq" msg_type="Application" version="2.0">
+    <MsgId>AAA-555-333-EEE-23124141</MsgId>
+    <Source app="Web"/>
+    <MsgData>
+        <Application>
+            <RegNumber>AA_XML_32_007</RegNumber>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>ContractParameter</ObjectType>
+            <ActionType>Disable</ActionType>
+            <ObjectFor>
+                <ContractIDT>
+                    <ContractNumber>4015500198074803</ContractNumber>
+                    <Client>
+                        <ClientInfo>
+                            <ShortName>&lt;&lt;&lt;NONE&gt;&gt;&gt;</ShortName>
+                        </ClientInfo>
+                    </Client>
+                </ContractIDT>
+            </ObjectFor>
+            <Data>
+                <CustomerParameters>
+                    <Parameter>
+                        <Code>AMOUNTPARMCNTR</Code>
+                    </Parameter>
+                </CustomerParameters>
+            </Data>
+        </Application>
+    </MsgData>
+</UFXMsg>

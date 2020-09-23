@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<ApplicationFile>
+	<FileHeader>
+		<FormatVersion>2.0</FormatVersion>
+		<Sender>000100</Sender>
+		<CreationDate>2005-01-01</CreationDate>
+		<CreationTime>01:02:30</CreationTime>
+		<Number>06</Number>
+		<Institution>0001</Institution>
+	</FileHeader>
+	<ApplicationsList>
+		<Application>
+			<RegNumber>AA_XML_27_006</RegNumber>
+			<OrderDprt>0101</OrderDprt>
+			<ObjectType>PaymentReceiver</ObjectType>
+			<ActionType>AddOrUpdate</ActionType>
+			<ObjectFor>
+				<ClientIDT>
+					<ClientInfo>
+						<ClientNumber>XML_AA_27_01_num</ClientNumber>
+						<ShortName>XML_AA_27_01_short</ShortName>
+					</ClientInfo>
+				</ClientIDT>
+			</ObjectFor>
+			<Data>
+				<PaymentReceiver>
+						<Code>1778</Code>
+						<Name>New Payee</Name>
+						<PaymentCode>010</PaymentCode>
+						<ContractNumber>4015500172946349</ContractNumber>
+						<MemberId>0001</MemberId>
+						<TransitId>0002</TransitId>
+           					<Client>
+		        				<ClientInfo>
+                           					<RegNumber>400577768445353</RegNumber>
+				    		    		<ShortName>Payment Client</ShortName>
+					        	</ClientInfo>
+							<AddInfo>
+								<InternationalClientInfo>
+     				    					<ShortName>Payment Client Int</ShortName>
+								</InternationalClientInfo>
+							</AddInfo>
+			        		</Client>					
+						<Address>
+							<Language>ENG</Language>	
+							<AddressLine1>Main Street, 7</AddressLine1>
+						</Address>
+						<Address>
+							<Language>RUS</Language>	
+							<AddressLine1>Glavnaya ulitsa, 7</AddressLine1>
+						</Address>
+						<InstInfo>
+							<Institution>Institution 1</Institution>
+							<InstLoroId>l1</InstLoroId>
+							<Address>
+								<Language>ENG</Language>	
+								<AddressLine1>Bank Street, 5</AddressLine1>
+							</Address>
+							<Address>
+								<Language>RUS</Language>	
+								<AddressLine1>Bankovskaya ulitsa, 5</AddressLine1>
+							</Address>
+						</InstInfo>
+						<TransitInstInfo>
+							<Institution>Institution 2</Institution>
+							<InstLoroId>l2</InstLoroId>
+							<Address>
+								<Language>ENG</Language>	
+								<AddressLine1>Transit Bank Street, 5</AddressLine1>
+							</Address>
+							<Address>
+								<Language>RUS</Language>	
+								<AddressLine1>Transitnaya Bankovskaya ulitsa, 5</AddressLine1>
+							</Address>
+						</TransitInstInfo>
+                    <ActivityPeriod>
+                        <Activation>Activate</Activation>
+                        <DateFrom>2010-05-15</DateFrom>
+                        <DateTo>2014-08-15</DateTo>
+                    </ActivityPeriod>
+				</PaymentReceiver>
+			</Data>
+		</Application>
+	</ApplicationsList>
+</ApplicationFile>

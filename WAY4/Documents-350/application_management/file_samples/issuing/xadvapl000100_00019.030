@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<ApplicationFile>
+	<FileHeader>
+		<FormatVersion>2.0</FormatVersion>
+		<Sender>000100</Sender>
+		<CreationDate>2019-01-16</CreationDate>
+		<CreationTime>01:02:30</CreationTime>
+		<Number>19</Number>
+		<Institution>0001</Institution>
+	</FileHeader>
+	<ApplicationsList>
+		<Application>
+			<RegNumber>AA_XML_30_019</RegNumber>
+			<OrderDprt>0101</OrderDprt>
+			<ObjectType>Limit</ObjectType>
+			<ActionType>Disable</ActionType>						
+			<ObjectFor>
+				<ContractIDT>
+					<ContractNumber>4015500120504430</ContractNumber>
+					<Client>
+						<ClientInfo>
+							<ShortName>XML_AA_30_02_short</ShortName>
+						</ClientInfo>
+					</Client>
+				</ContractIDT>			
+			</ObjectFor>
+			<Data>
+				<SetLimit>
+					<FinanceLimit>
+						<Amount>10000</Amount>
+						<Currency>RUR</Currency>
+					</FinanceLimit>
+                    			<ReasonDetails>first temporary credit limit in future</ReasonDetails>
+					<ActivityPeriod>
+						<DateFrom>2024-01-01</DateFrom>
+						<DateTo>2024-07-10</DateTo>
+					</ActivityPeriod>
+				</SetLimit>
+			</Data>
+		</Application>
+	</ApplicationsList>
+</ApplicationFile>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationFile>
+    <FileHeader>
+        <FormatVersion>2.0</FormatVersion>
+        <Sender>000100</Sender>
+        <CreationDate>2012-03-11</CreationDate>
+        <CreationTime>01:02:30</CreationTime>
+        <Number>02</Number>
+        <Institution>0001</Institution>
+    </FileHeader>
+    <ApplicationsList>
+        <Application>
+            <RegNumber>AA_XML_02_004</RegNumber>
+            <ObjectType>ContractAddress</ObjectType>
+            <ActionType>Add</ActionType>
+            <ObjectFor>
+                <ContractIDT>
+                    <RBSNumber>RBSNumber-XML-AA-017</RBSNumber>
+                    <Client>
+                        <ClientInfo>
+                            <ShortName>XML_AA_17_short</ShortName>
+                        </ClientInfo>
+                    </Client>
+                </ContractIDT>
+            </ObjectFor>
+            <Data>
+                <Address>
+                    <AddressType>OWS_PS</AddressType>
+                    <Country>RUS</Country>
+                    <City>Merchant City</City>
+                    <PostalCode>ZipCode</PostalCode>
+                    <AddressLine1>Merchant Name</AddressLine1>
+                    <AddressLine2>Location</AddressLine2>
+                </Address>
+            </Data>
+        </Application>
+    </ApplicationsList>
+</ApplicationFile>

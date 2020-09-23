@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationFile>
+    <FileHeader>
+        <FormatVersion>2.0</FormatVersion>
+        <Sender>000100</Sender>
+        <CreationDate>2012-02-29</CreationDate>
+        <CreationTime>01:02:30</CreationTime>
+        <Number>18</Number>
+        <Institution>0001</Institution>
+    </FileHeader>
+    <ApplicationsList>
+        <Application>
+            <RegNumber>AA_XML_18_002</RegNumber>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>Order</ObjectType>
+            <ActionType>ActivatePersonal</ActionType>
+            <ObjectFor>
+                <ContractIDT>
+                    <ContractNumber>XML-AA-001</ContractNumber>
+                    <Client>
+                        <ClientInfo>
+                            <ShortName>XML_AA_01_short</ShortName>
+                        </ClientInfo>
+                    </Client>
+                </ContractIDT>
+            </ObjectFor>
+            <Data>
+                <StandOrder>
+                    <Code>010</Code>
+                    <TargetNumber>4015500100530421</TargetNumber>
+                    <TransDetails>TransDetails</TransDetails>
+                    <ReasonDetails>ReasonDetails</ReasonDetails>
+                    <OrderDetails1>OrderDetails1</OrderDetails1>
+                    <OrderDetails2>OrderDetails2</OrderDetails2>
+                </StandOrder>
+            </Data>
+        </Application>
+    </ApplicationsList>
+</ApplicationFile>

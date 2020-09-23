@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<ApplicationFile>
+	<FileHeader>
+		<FormatVersion>2.0</FormatVersion>
+		<Sender>000100</Sender>
+		<CreationDate>2005-01-01</CreationDate>
+		<CreationTime>01:02:30</CreationTime>
+		<Number>01</Number>
+		<Institution>0001</Institution>
+	</FileHeader>
+	<ApplicationsList>
+		<Application>
+			<RegNumber>AA_XML_10_004</RegNumber>
+			<OrderDprt>0101</OrderDprt>
+			<ObjectType>Contract</ObjectType>
+			<ActionType>Update</ActionType>
+			<ObjectFor>
+				<ContractIDT>
+					<ContractNumber>XML_AA_ACQ_OWS_PS</ContractNumber>
+					<Client>
+						<ClientInfo>
+							<ShortName>XML_AA_OWS_PS_02_acq_short</ShortName>
+						</ClientInfo>
+					</Client>
+				</ContractIDT>
+			</ObjectFor>
+			<Data>
+				<Contract>
+					<DeviceInfo>
+						<DeviceDocParms>
+							<SIC>5542</SIC>
+							<MerchantID>ModCAcceptorID</MerchantID>
+							<AddData>
+								<Parm>
+									<ParmCode>EXPLICIT_PARMS</ParmCode>
+									<Value>Y</Value>
+								</Parm>
+							</AddData>
+						</DeviceDocParms>
+					</DeviceInfo>
+				</Contract>
+			</Data>
+			<SubApplList>
+				<Application>
+					<RegNumber>AA_XML_10_004_01</RegNumber>
+					<ObjectType>ContractAddress</ObjectType>
+					<ActionType>Update</ActionType>
+					<Data>
+						<Address>
+							<AddressType>OWS_PS</AddressType>
+							<Country>LTU</Country>
+							<City>UPD Device City</City>
+							<PostalCode>UPDiceCode</PostalCode>
+							<AddressLine1>UPD Device Name</AddressLine1>
+							<AddressLine2>UPD Device Location</AddressLine2>
+						</Address>
+					</Data>
+				</Application>
+			</SubApplList>
+		</Application>
+	</ApplicationsList>
+</ApplicationFile>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationFile>
+    <FileHeader>
+        <FormatVersion>2.0</FormatVersion>
+        <Sender>000100</Sender>
+        <CreationDate>2012-02-16</CreationDate>
+        <CreationTime>01:02:30</CreationTime>
+        <Number>01</Number>
+        <Institution>0001</Institution>
+    </FileHeader>
+    <ApplicationsList>
+        <Application>
+            <RegNumber>AA_XML_01_001</RegNumber>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>ContractGroup</ObjectType>
+            <ActionType>Add</ActionType>
+            <ObjectFor>
+                <ContractIDT>
+                    <ContractNumber>XML-AA-001</ContractNumber>
+                    <Client>
+                        <ClientInfo>
+                            <ShortName>XML_AA_01_short</ShortName>
+                        </ClientInfo>
+                    </Client>
+                </ContractIDT>
+            </ObjectFor>
+            <Data>
+                <ContractGroup>
+                    <GroupCode>ACNT_GROUP_1</GroupCode>
+                    <GroupName>GROUP_NAME</GroupName>
+                    <GroupType>GR_TYPE</GroupType>
+                    <DateFrom>2019-03-21</DateFrom>
+                    <DateTo>2019-05-21</DateTo>
+                </ContractGroup>
+            </Data>
+        </Application>
+    </ApplicationsList>
+</ApplicationFile>
