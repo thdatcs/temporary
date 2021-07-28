@@ -1,0 +1,25 @@
+CREATE OR REPLACE VIEW oms.OMS_ETL_V_POINT AS
+SELECT
+0 amount
+, c.client_number cif_no
+, 'Card Point' description
+, mt.local_date input_date
+, SUM(mt.local_amount) point
+, SYSDATE insert_date
+, '003' product_code
+, 'Y' is_exchange_gift
+, 'Y' is_to_rankup
+, 'N' is_coin_insentive
+, 0 insert_status
+, 'CARD' source
+, 'LIVE' status
+FROM ows.m_transaction mt
+JOIN ows.account sa ON mt.source_account=sa.id
+JOIN ows.account ta ON mt.target_account=ta.id
+JOIN ows.acnt_contract ic ON sa.acnt_contract__oid=ic.id AND ic.amnd_state='A'
+JOIN ows.client c ON ic.client__id=c.id AND c.amnd_state='A'
+WHERE sa.code='B2'
+AND ta.code='B3'
+AND ic.con_cat='A'
+AND ic.liab_category='Y'
+GROUP by c.client_number, mt.local_date;

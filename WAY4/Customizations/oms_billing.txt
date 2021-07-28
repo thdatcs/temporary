@@ -1,0 +1,2 @@
+alter table oms.oms_billing add instalment_creation number;
+alter table oms.oms_billing_hist add instalment_creation number;
