@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationFile>
+    <FileHeader>
+        <FormatVersion>2.0</FormatVersion>
+        <Sender>000100</Sender>
+        <CreationDate>2012-02-22</CreationDate>
+        <CreationTime>01:02:30</CreationTime>
+        <Number>54</Number>
+        <Institution>0001</Institution>
+    </FileHeader>
+    <ApplicationsList>
+		<Application>
+			<RegNumber>123w4</RegNumber>
+			<OrderDprt>0101</OrderDprt>
+			<ObjectType>Contract</ObjectType>
+			<ActionType>Update</ActionType>
+			<ObjectFor>
+				<ContractIDT>
+					<ContractNumber>6799990148471125</ContractNumber>
+					<Client>
+						<ClientInfo>
+							<ShortName>AAAS</ShortName>
+						</ClientInfo>
+					</Client>
+				</ContractIDT>
+			</ObjectFor>
+			<Data>
+				<Contract>
+					<ContractName>_contract_name_12456</ContractName>
+					<CommentText>comment</CommentText>
+					<AddContractInfo>
+						<ChangeInstitution>0001</ChangeInstitution>
+						<ChangeInstitutionType>B</ChangeInstitutionType>
+					</AddContractInfo>
+				</Contract>
+			</Data>
+		</Application>
+    </ApplicationsList>
+</ApplicationFile>

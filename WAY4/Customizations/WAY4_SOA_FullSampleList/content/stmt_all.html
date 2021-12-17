@@ -1,0 +1,493 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UFX Protocol by Example - Full additional statement for contract</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <link rel="stylesheet" type="text/css" href="../css/mine.css" media="all">
+
+    <link href="../css/shCore.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/shThemeDefault.css" rel="stylesheet" type="text/css"/>
+
+    <script src="../js/shCore.js" type="text/javascript"></script>
+    <script src="../js/shBrushXml.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="main">
+
+        <div id="main-header">
+        <h1 id="title-heading" class="pagetitle">
+            <a href="../index.html"><img class="logo" alt="" src="../img/global.png"></a>
+            <span id="title-text"><a href="../index.html">UFX Protocol by Example</a></span>
+        </h1>
+    </div>
+
+    <div class="content">
+
+
+        <h2 class="content-heading">Full additional statement for contract</h2>
+
+        <p>
+            
+        </p>
+
+                    <h4>Request</h4>
+
+            <p>
+                
+            </p>
+
+                <div style="border-width: 1px;" class="code panel">
+        <div class="panelContent">
+            <script type="syntaxhighlighter" class="brush: xml; gutter: false; toolbar: false">
+                <![CDATA[<UFXMsg direction="Rq" msg_type="Doc" scheme="WAY4Doc" version="2.0">
+    <MsgId>AAA-555-333-EEE-23124141</MsgId>
+    <Source app="IVR01"/>
+    <MsgData>
+        <Doc>
+            <TransType>
+                <TransCode>
+                    <MsgCode>01000S</MsgCode>
+                </TransCode>
+            </TransType>
+            <DocRefSet>
+                <Parm>
+                    <ParmCode>RRN</ParmCode>
+                    <Value>449999111001</Value>
+                </Parm>
+            </DocRefSet>
+            <Requestor>
+                <ContractNumber>WAY4U-STMT-001</ContractNumber>
+            </Requestor>
+            <Source>
+                <ContractNumber>99999999</ContractNumber>
+                <MemberId>0001</MemberId>
+            </Source>
+            <ResultDtls>
+                <Parm>
+                    <ParmCode>StmtType</ParmCode>
+                    <Value>Additional</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>StmtContType</ParmCode>
+                    <Value>All</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>DateFrom</ParmCode>
+                    <Value>2001-08-23</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>DateTo</ParmCode>
+                    <Value>2009-08-25</Value>
+                </Parm>
+            </ResultDtls>
+        </Doc>
+    </MsgData>
+</UFXMsg>
+]]>
+            </script>
+        </div>
+    </div>
+        
+        
+                                                                
+                    <h4>Response</h4>
+
+            <p>
+                
+            </p>
+
+                <div style="border-width: 1px;" class="code panel">
+        <div class="panelContent">
+            <script type="syntaxhighlighter" class="brush: xml; gutter: false; toolbar: false">
+                <![CDATA[<UFXMsg direction="Rs" msg_type="Doc" resp_class="I" resp_code="0" scheme="WAY4Doc" version="2.0">
+    <MsgId>AAA-555-333-EEE-23124141</MsgId>
+    <Source app="IVR01"/>
+    <MsgData>
+        <Doc>
+            <TransType>
+                <TransCode>
+                    <MsgCode>01000S</MsgCode>
+                </TransCode>
+            </TransType>
+            <DocRefSet>
+                <Parm>
+                    <ParmCode>RRN</ParmCode>
+                    <Value>449999111001</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>AuthCode</ParmCode>
+                    <Value>123456</Value>
+                </Parm>
+            </DocRefSet>
+            <Requestor>
+                <ContractNumber>WAY4U-STMT-001</ContractNumber>
+            </Requestor>
+            <Source>
+                <ContractNumber>99999999</ContractNumber>
+                <MemberId>0001</MemberId>
+            </Source>
+            <ResultDtls>
+                <Parm>
+                    <ParmCode>StmtType</ParmCode>
+                    <Value>Additional</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>StmtContType</ParmCode>
+                    <Value>All</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>DateFrom</ParmCode>
+                    <Value>2001-08-23</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>DateTo</ParmCode>
+                    <Value>2009-08-25</Value>
+                </Parm>
+            </ResultDtls>
+            <DataRs>
+                <Stmt>
+                    <AdditionalStmt>
+                        <BeginBalance>
+                            <Balance>
+                                <Amount>-10300.00</Amount>
+                                <Currency>RUR</Currency>
+                            </Balance>
+                        </BeginBalance>
+                        <StmtItem>
+                            <PostingDetails>
+                                <AccountAmount>
+                                    <Type>Full</Type>
+                                    <Currency>RUR</Currency>
+                                    <Amount>-1000</Amount>
+                                </AccountAmount>
+                                <ProcessingStatus>Posted</ProcessingStatus>
+                                <Status>
+                                    <RespClass>Information</RespClass>
+                                    <RespCode>0</RespCode>
+                                    <RespText>Successfully completed</RespText>
+                                    <PostingStatus>Posted</PostingStatus>
+                                </Status>
+                            </PostingDetails>
+                            <DocData>
+                                <TransType>
+                                    <TransCode>
+                                        <MsgCode>PAYFACC_CASH</MsgCode>
+                                        <FinCategory>N</FinCategory>
+                                        <RequestCategory>P</RequestCategory>
+                                        <ServiceClass>T</ServiceClass>
+                                        <TransTypeCode>PR</TransTypeCode>
+                                    </TransCode>
+                                </TransType>
+                                <LocalDt>
+                                    123456
+                                </LocalDt>
+                                <Description>Payment From Cash   Payment Cash -1000</Description>
+                                <SourceDtls/>
+                                <ContractFor>
+                                    <ContractNumber>WAY4U-STMT-001</ContractNumber>
+                                </ContractFor>
+                                <Originator>
+                                    <ContractNumber>001-TELLER</ContractNumber>
+                                </Originator>
+                                <Destination>
+                                    <ContractNumber>WAY4U-STMT-001</ContractNumber>
+                                </Destination>
+                                <Transaction>
+                                    <Currency>RUR</Currency>
+                                    <Amount>1000</Amount>
+                                </Transaction>
+                                <Billing>
+                                    <PhaseDate>2008-01-06</PhaseDate>
+                                    <Currency>RUR</Currency>
+                                    <Amount>1000</Amount>
+                                </Billing>
+                            </DocData>
+                        </StmtItem>
+                        <StmtItem>
+                            <PostingDetails>
+                                <AccountAmount>
+                                    <Type>Full</Type>
+                                    <Currency>RUR</Currency>
+                                    <Amount>-4000</Amount>
+                                </AccountAmount>
+                                <ProcessingStatus>Posted</ProcessingStatus>
+                                <Status>
+                                    <RespClass>Information</RespClass>
+                                    <RespCode>0</RespCode>
+                                    <RespText>Successfully completed</RespText>
+                                    <PostingStatus>Posted</PostingStatus>
+                                </Status>
+                            </PostingDetails>
+                            <DocData>
+                                <TransType>
+                                    <TransCode>
+                                        <MsgCode>PAYFACC_CASH</MsgCode>
+                                        <FinCategory>N</FinCategory>
+                                        <RequestCategory>P</RequestCategory>
+                                        <ServiceClass>T</ServiceClass>
+                                        <TransTypeCode>PR</TransTypeCode>
+                                    </TransCode>
+                                </TransType>
+                                <LocalDt>
+                                    123456
+                                </LocalDt>
+                                <Description>Payment From Cash   Payment Cash -4000</Description>
+                                <SourceDtls/>
+                                <ContractFor>
+                                    <ContractNumber>WAY4U-STMT-001</ContractNumber>
+                                </ContractFor>
+                                <Originator>
+                                    <ContractNumber>001-TELLER</ContractNumber>
+                                </Originator>
+                                <Destination>
+                                    <ContractNumber>WAY4U-STMT-001</ContractNumber>
+                                </Destination>
+                                <Transaction>
+                                    <Currency>RUR</Currency>
+                                    <Amount>4000</Amount>
+                                </Transaction>
+                                <Billing>
+                                    <PhaseDate>2008-01-09</PhaseDate>
+                                    <Currency>RUR</Currency>
+                                    <Amount>4000</Amount>
+                                </Billing>
+                            </DocData>
+                        </StmtItem>
+                        <StmtItem>
+                            <PostingDetails>
+                                <AccountAmount>
+                                    <Type>Full</Type>
+                                    <Currency>RUR</Currency>
+                                    <Amount>-5000</Amount>
+                                </AccountAmount>
+                                <ProcessingStatus>Posted</ProcessingStatus>
+                                <Status>
+                                    <RespClass>Information</RespClass>
+                                    <RespCode>0</RespCode>
+                                    <RespText>Successfully completed</RespText>
+                                    <PostingStatus>Posted</PostingStatus>
+                                </Status>
+                            </PostingDetails>
+                            <DocData>
+                                <TransType>
+                                    <TransCode>
+                                        <MsgCode>PAYFACC_RETAIL</MsgCode>
+                                        <FinCategory>N</FinCategory>
+                                        <RequestCategory>P</RequestCategory>
+                                        <ServiceClass>T</ServiceClass>
+                                        <TransTypeCode>PC</TransTypeCode>
+                                    </TransCode>
+                                </TransType>
+                                <LocalDt>
+                                    123456
+                                </LocalDt>
+                                <Description>Payment From Retail   Payment Retail -5000</Description>
+                                <SourceDtls/>
+                                <ContractFor>
+                                    <ContractNumber>WAY4U-STMT-001</ContractNumber>
+                                </ContractFor>
+                                <Originator>
+                                    <ContractNumber>001-TELLER</ContractNumber>
+                                </Originator>
+                                <Destination>
+                                    <ContractNumber>WAY4U-STMT-001</ContractNumber>
+                                </Destination>
+                                <Transaction>
+                                    <Currency>RUR</Currency>
+                                    <Amount>5000</Amount>
+                                </Transaction>
+                                <Billing>
+                                    <PhaseDate>2008-01-28</PhaseDate>
+                                    <Currency>RUR</Currency>
+                                    <Amount>5000</Amount>
+                                </Billing>
+                            </DocData>
+                        </StmtItem>
+                        <StmtItem>
+                            <PostingDetails>
+                                <AccountAmount>
+                                    <Type>Full</Type>
+                                    <Currency>RUR</Currency>
+                                    <Amount>-3000</Amount>
+                                </AccountAmount>
+                                <ProcessingStatus>Posted</ProcessingStatus>
+                                <Status>
+                                    <RespClass>Information</RespClass>
+                                    <RespCode>0</RespCode>
+                                    <RespText>Successfully completed</RespText>
+                                    <PostingStatus>Posted</PostingStatus>
+                                </Status>
+                            </PostingDetails>
+                            <DocData>
+                                <TransType>
+                                    <TransCode>
+                                        <MsgCode>PAYFACC_CASH</MsgCode>
+                                        <FinCategory>N</FinCategory>
+                                        <RequestCategory>P</RequestCategory>
+                                        <ServiceClass>T</ServiceClass>
+                                        <TransTypeCode>PR</TransTypeCode>
+                                    </TransCode>
+                                </TransType>
+                                <LocalDt>
+                                    123456
+                                </LocalDt>
+                                <Description>Payment From Cash   Payment Cash -3000</Description>
+                                <SourceDtls/>
+                                <ContractFor>
+                                    <ContractNumber>WAY4U-STMT-001</ContractNumber>
+                                </ContractFor>
+                                <Originator>
+                                    <ContractNumber>001-TELLER</ContractNumber>
+                                </Originator>
+                                <Destination>
+                                    <ContractNumber>WAY4U-STMT-001</ContractNumber>
+                                </Destination>
+                                <Transaction>
+                                    <Currency>RUR</Currency>
+                                    <Amount>3000</Amount>
+                                </Transaction>
+                                <Billing>
+                                    <PhaseDate>2008-02-11</PhaseDate>
+                                    <Currency>RUR</Currency>
+                                    <Amount>3000</Amount>
+                                </Billing>
+                            </DocData>
+                        </StmtItem>
+                        <StmtItem>
+                            <PostingDetails>
+                                <AccountAmount>
+                                    <Type>Full</Type>
+                                    <Currency>RUR</Currency>
+                                    <Amount>-8000</Amount>
+                                </AccountAmount>
+                                <ProcessingStatus>Posted</ProcessingStatus>
+                                <Status>
+                                    <RespClass>Information</RespClass>
+                                    <RespCode>0</RespCode>
+                                    <RespText>Successfully completed</RespText>
+                                    <PostingStatus>Posted</PostingStatus>
+                                </Status>
+                            </PostingDetails>
+                            <DocData>
+                                <TransType>
+                                    <TransCode>
+                                        <MsgCode>PAYFACC_RETAIL</MsgCode>
+                                        <FinCategory>N</FinCategory>
+                                        <RequestCategory>P</RequestCategory>
+                                        <ServiceClass>T</ServiceClass>
+                                        <TransTypeCode>PC</TransTypeCode>
+                                    </TransCode>
+                                </TransType>
+                                <LocalDt>
+                                    123456
+                                </LocalDt>
+                                <Description>Payment From Retail   Payment Retail -8000</Description>
+                                <SourceDtls/>
+                                <ContractFor>
+                                    <ContractNumber>WAY4U-STMT-001</ContractNumber>
+                                </ContractFor>
+                                <Originator>
+                                    <ContractNumber>001-TELLER</ContractNumber>
+                                </Originator>
+                                <Destination>
+                                    <ContractNumber>WAY4U-STMT-001</ContractNumber>
+                                </Destination>
+                                <Transaction>
+                                    <Currency>RUR</Currency>
+                                    <Amount>8000</Amount>
+                                </Transaction>
+                                <Billing>
+                                    <PhaseDate>2008-02-11</PhaseDate>
+                                    <Currency>RUR</Currency>
+                                    <Amount>8000</Amount>
+                                </Billing>
+                            </DocData>
+                        </StmtItem>
+                        <StmtItem>
+                            <PostingDetails>
+                                <AccountAmount>
+                                    <Type>Full</Type>
+                                    <Currency>RUR</Currency>
+                                    <Amount>10700</Amount>
+                                </AccountAmount>
+                                <ProcessingStatus>Posted</ProcessingStatus>
+                                <Status>
+                                    <RespClass>Information</RespClass>
+                                    <RespCode>0</RespCode>
+                                    <RespText>Successfully completed</RespText>
+                                    <PostingStatus>Posted</PostingStatus>
+                                </Status>
+                            </PostingDetails>
+                            <DocData>
+                                <TransType>
+                                    <TransCode>
+                                        <MsgCode>PAYACC</MsgCode>
+                                        <FinCategory>N</FinCategory>
+                                        <RequestCategory>P</RequestCategory>
+                                        <ServiceClass>T</ServiceClass>
+                                        <TransTypeCode>PT</TransTypeCode>
+                                    </TransCode>
+                                </TransType>
+                                <LocalDt>
+                                    123456
+                                </LocalDt>
+                                <Description>Payment To Client Contract   Payment To +10700</Description>
+                                <SourceDtls/>
+                                <ContractFor>
+                                    <ContractNumber>WAY4U-STMT-001</ContractNumber>
+                                </ContractFor>
+                                <Originator>
+                                    <ContractNumber>001-TELLER</ContractNumber>
+                                </Originator>
+                                <Destination>
+                                    <ContractNumber>WAY4U-STMT-001</ContractNumber>
+                                </Destination>
+                                <Transaction>
+                                    <Currency>RUR</Currency>
+                                    <Amount>10700</Amount>
+                                </Transaction>
+                                <Billing>
+                                    <PhaseDate>2008-02-18</PhaseDate>
+                                    <Currency>RUR</Currency>
+                                    <Amount>10700</Amount>
+                                </Billing>
+                            </DocData>
+                        </StmtItem>
+                    </AdditionalStmt>
+                </Stmt>
+            </DataRs>
+            <Status>
+                <RespClass>Information</RespClass>
+                <RespCode>0</RespCode>
+                <RespText>Successfully processed</RespText>
+            </Status>
+        </Doc>
+    </MsgData>
+</UFXMsg>
+]]>
+            </script>
+        </div>
+    </div>
+        
+
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    SyntaxHighlighter.all();
+</script>
+
+</body>
+</html>

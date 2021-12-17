@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationFile>
+    <FileHeader>
+        <FormatVersion>2.0</FormatVersion>
+        <Sender>0001</Sender>
+        <CreationDate>2012-08-17</CreationDate>
+        <CreationTime>10:53:16</CreationTime>
+        <Number>46</Number>
+        <Institution>0001</Institution>
+    </FileHeader>
+    <ApplicationsList>
+        <Application>
+            <RegNumber>AA_XML_46_002</RegNumber>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>Contract</ObjectType>
+            <ActionType>ClearPINAttempts</ActionType>
+            <ObjectFor>
+                <ContractIDT>
+                    <ContractNumber>1000050102847731</ContractNumber>
+                    <Client>
+                        <ClientInfo>
+                            <ShortName>&lt;&lt;&lt;NONE&gt;&gt;&gt;</ShortName>
+                        </ClientInfo>
+                    </Client>
+                </ContractIDT>
+            </ObjectFor>
+        </Application>
+    </ApplicationsList>
+</ApplicationFile>

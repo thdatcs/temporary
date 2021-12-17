@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationFile>
+    <FileHeader>
+        <FormatVersion>2.0</FormatVersion>
+        <Sender>000100</Sender>
+        <CreationDate>2012-03-11</CreationDate>
+        <CreationTime>01:02:30</CreationTime>
+        <Number>06</Number>
+        <Institution>0001</Institution>
+    </FileHeader>
+    <ApplicationsList>
+        <Application>
+            <RegNumber>AA_XML_06_004</RegNumber>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>Client</ObjectType>
+            <ActionType>Add</ActionType>
+            <Data>
+                <Client>
+                    <ClientType>PR</ClientType>
+                    <ClientInfo>
+                        <ClientNumber>XML_AA_02_num base</ClientNumber>
+                        <RegNumberType>RegNumberType base</RegNumberType>
+                        <RegNumber>XML_AA_02_reg base</RegNumber>
+                        <RegNumberDetails>_RegDetails base</RegNumberDetails>
+                        <ShortName>XML_AA_02_short base</ShortName>
+                        <Title>MR</Title>
+                        <FirstName>FirstName base</FirstName>
+                        <LastName>LastName base</LastName>
+                        <MiddleName>FathersName</MiddleName>
+                        <SecurityName>SecurityName</SecurityName>
+                        <Country>LTU</Country>
+                        <Language>G</Language>
+                        <MaritalStatus>D</MaritalStatus>
+                        <Position>Profession</Position>
+                        <CompanyName>CompanyName</CompanyName>
+                        <CompanyTradeName>CompanyTradeName</CompanyTradeName>
+                        <BirthDate>1967-08-13</BirthDate>
+                        <BirthPlace>BirthPlace</BirthPlace>
+                        <BirthName>BirthName</BirthName>
+                    </ClientInfo>
+                    <PlasticInfo>
+                        <Title>MR</Title>
+                        <FirstName>XML</FirstName>
+                        <LastName>AA</LastName>
+                        <CompanyName>CLI</CompanyName>
+                    </PlasticInfo>
+                    <PhoneList>
+                        <Phone>
+                            <PhoneType>Work</PhoneType>
+                            <PhoneNumber>Work</PhoneNumber>
+                        </Phone>
+                        <Phone>
+                            <PhoneType>Home</PhoneType>
+                            <PhoneNumber>Home</PhoneNumber>
+                        </Phone>
+                        <Phone>
+                            <PhoneType>Mobile</PhoneType>
+                            <PhoneNumber>Mobile</PhoneNumber>
+                        </Phone>
+                    </PhoneList>
+                    <DateOpen>2012-01-01</DateOpen>
+                    <DateExpiry>2020-12-31</DateExpiry>
+                </Client>
+            </Data>
+            <SubApplList>
+                <Application>
+                    <RegNumber>AA_XML_06_004_01</RegNumber>
+                    <ObjectType>Contract</ObjectType>
+                    <ActionType>Add</ActionType>
+                    <Data>
+                        <Contract>
+                            <ContractIDT>
+                                <ContractNumber>XML-BASE-001</ContractNumber>
+                            </ContractIDT>
+                            <ContractName>Base Contract with relation</ContractName>
+                            <CommentText>Base Contract with relation card</CommentText>
+                            <Product>
+                                <ProductCode1>IssMain</ProductCode1>
+                            </Product>
+                            <DateOpen>2012-01-01</DateOpen>
+                        </Contract>
+                    </Data>
+                </Application>
+            </SubApplList>
+        </Application>
+    </ApplicationsList>
+</ApplicationFile>

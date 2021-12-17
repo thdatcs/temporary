@@ -1,0 +1,145 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UFX Protocol by Example - Change Contract Status</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <link rel="stylesheet" type="text/css" href="../css/mine.css" media="all">
+
+    <link href="../css/shCore.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/shThemeDefault.css" rel="stylesheet" type="text/css"/>
+
+    <script src="../js/shCore.js" type="text/javascript"></script>
+    <script src="../js/shBrushXml.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="main">
+
+        <div id="main-header">
+        <h1 id="title-heading" class="pagetitle">
+            <a href="../index.html"><img class="logo" alt="" src="../img/global.png"></a>
+            <span id="title-text"><a href="../index.html">UFX Protocol by Example</a></span>
+        </h1>
+    </div>
+
+    <div class="content">
+
+
+        <h2 class="content-heading">Change Contract Status</h2>
+
+        <p>
+            
+        </p>
+
+                    <h4>Request</h4>
+
+            <p>
+                
+            </p>
+
+                <div style="border-width: 1px;" class="code panel">
+        <div class="panelContent">
+            <script type="syntaxhighlighter" class="brush: xml; gutter: false; toolbar: false">
+                <![CDATA[<UFXMsg direction="Rq" msg_type="Application" scheme="WAY4Appl" version="2.0">
+    <MsgId>AAA-555-333-EEE-23124141</MsgId>
+    <Source app="Web01"/>
+    <MsgData>
+        <Application>
+            <RegNumber>AA_XML_03_029</RegNumber>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>Status</ObjectType>
+            <ActionType>Update</ActionType>
+            <ResultDtls>
+                <Parm>
+                    <ParmCode>AcceptRq</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+            </ResultDtls>
+            <ObjectFor>
+                <ContractIDT>
+                    <ContractNumber>4015500100530421</ContractNumber>
+                    <Client>
+                        <ClientInfo>
+                            <ShortName>XML_AA_01_short</ShortName>
+                        </ClientInfo>
+                    </Client>
+                </ContractIDT>
+            </ObjectFor>
+            <Data>
+                <SetStatus>
+                    <StatusCode>43</StatusCode>
+                    <StatusComment>!26_UpdatedCommentText01</StatusComment>
+                </SetStatus>
+            </Data>
+        </Application>
+    </MsgData>
+</UFXMsg>
+]]>
+            </script>
+        </div>
+    </div>
+        
+        
+                                                                
+                    <h4>Response</h4>
+
+            <p>
+                
+            </p>
+
+                <div style="border-width: 1px;" class="code panel">
+        <div class="panelContent">
+            <script type="syntaxhighlighter" class="brush: xml; gutter: false; toolbar: false">
+                <![CDATA[<UFXMsg direction="Rs" msg_type="Application" resp_class="I" resp_code="0" scheme="WAY4Appl" version="2.0">
+    <MsgId>AAA-555-333-EEE-23124141</MsgId>
+    <Source app="Web01"/>
+    <MsgData>
+        <Application>
+            <RegNumber>AA_XML_03_029</RegNumber>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>Status</ObjectType>
+            <ActionType>Update</ActionType>
+            <ObjectFor>
+                <ContractIDT>
+                    <ContractNumber>4015500100530421</ContractNumber>
+                    <Client>
+                        <ClientInfo>
+                            <ShortName>XML_AA_01_short</ShortName>
+                        </ClientInfo>
+                    </Client>
+                </ContractIDT>
+            </ObjectFor>
+            <Status>
+                <RespClass>Information</RespClass>
+                <RespCode>0</RespCode>
+                <RespText>Successfully processed</RespText>
+            </Status>
+        </Application>
+    </MsgData>
+</UFXMsg>
+]]>
+            </script>
+        </div>
+    </div>
+        
+
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    SyntaxHighlighter.all();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UFX Protocol by Example - Update client address</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <link rel="stylesheet" type="text/css" href="../css/mine.css" media="all">
+
+    <link href="../css/shCore.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/shThemeDefault.css" rel="stylesheet" type="text/css"/>
+
+    <script src="../js/shCore.js" type="text/javascript"></script>
+    <script src="../js/shBrushXml.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="main">
+
+        <div id="main-header">
+        <h1 id="title-heading" class="pagetitle">
+            <a href="../index.html"><img class="logo" alt="" src="../img/global.png"></a>
+            <span id="title-text"><a href="../index.html">UFX Protocol by Example</a></span>
+        </h1>
+    </div>
+
+    <div class="content">
+
+
+        <h2 class="content-heading">Update client address</h2>
+
+        <p>
+            
+        </p>
+
+                    <h4>Request</h4>
+
+            <p>
+                
+            </p>
+
+                <div style="border-width: 1px;" class="code panel">
+        <div class="panelContent">
+            <script type="syntaxhighlighter" class="brush: xml; gutter: false; toolbar: false">
+                <![CDATA[<UFXMsg direction="Rq" msg_type="Application" scheme="WAY4Appl" version="2.0">
+    <MsgId>AAA-555-333-EEE-23124141</MsgId>
+    <Source app="Web01"/>
+    <MsgData>
+        <Application>
+            <RegNumber>AA_XML_09_002</RegNumber>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>ClientAddress</ObjectType>
+            <ActionType>Update</ActionType>
+            <ObjectFor>
+                <ClientIDT>
+                    <ClientInfo>
+                        <ShortName>&lt;&lt;&lt;NONE&gt;&gt;&gt;</ShortName>
+                    </ClientInfo>
+                    <RefContractNumber>XML-AA-09-001</RefContractNumber>
+                </ClientIDT>
+            </ObjectFor>
+            <Data>
+                <Address>
+                    <AddressType>STMT</AddressType>
+                    <Country>RUS</Country>
+                    <City>Washington</City>
+                    <PostalCode>333111555</PostalCode>
+                    <AddressLine1>XML_AA_AddressLine1</AddressLine1>
+                    <AddressLine2>XML_AA_AddressLine2</AddressLine2>
+                    <AddressLine3>XML_AA_AddressLine3</AddressLine3>
+                    <AddressLine4>XML_AA_AddressLine4</AddressLine4>
+                </Address>
+            </Data>
+        </Application>
+    </MsgData>
+</UFXMsg>
+]]>
+            </script>
+        </div>
+    </div>
+        
+        
+                                                                
+                    <h4>Response</h4>
+
+            <p>
+                
+            </p>
+
+                <div style="border-width: 1px;" class="code panel">
+        <div class="panelContent">
+            <script type="syntaxhighlighter" class="brush: xml; gutter: false; toolbar: false">
+                <![CDATA[<UFXMsg direction="Rs" msg_type="Application" resp_class="I" resp_code="0" scheme="WAY4Appl" version="2.0">
+    <MsgId>AAA-555-333-EEE-23124141</MsgId>
+    <Source app="Web01"/>
+    <MsgData>
+        <Application>
+            <RegNumber>AA_XML_09_002</RegNumber>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>ClientAddress</ObjectType>
+            <ActionType>Update</ActionType>
+            <ObjectFor>
+                <ClientIDT>
+                    <ClientInfo>
+                        <ShortName>&lt;&lt;&lt;NONE&gt;&gt;&gt;</ShortName>
+                    </ClientInfo>
+                    <RefContractNumber>XML-AA-09-001</RefContractNumber>
+                </ClientIDT>
+            </ObjectFor>
+            <Status>
+                <RespClass>Information</RespClass>
+                <RespCode>0</RespCode>
+                <RespText>Successfully processed</RespText>
+            </Status>
+        </Application>
+    </MsgData>
+</UFXMsg>
+]]>
+            </script>
+        </div>
+    </div>
+        
+
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    SyntaxHighlighter.all();
+</script>
+
+</body>
+</html>

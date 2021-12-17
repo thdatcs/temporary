@@ -1,0 +1,214 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UFX Protocol by Example - Add Client</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <link rel="stylesheet" type="text/css" href="../css/mine.css" media="all">
+
+    <link href="../css/shCore.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/shThemeDefault.css" rel="stylesheet" type="text/css"/>
+
+    <script src="../js/shCore.js" type="text/javascript"></script>
+    <script src="../js/shBrushXml.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="main">
+
+        <div id="main-header">
+        <h1 id="title-heading" class="pagetitle">
+            <a href="../index.html"><img class="logo" alt="" src="../img/global.png"></a>
+            <span id="title-text"><a href="../index.html">UFX Protocol by Example</a></span>
+        </h1>
+    </div>
+
+    <div class="content">
+
+
+        <h2 class="content-heading">Add Client</h2>
+
+        <p>
+            
+        </p>
+
+                    <h4>Request</h4>
+
+            <p>
+                
+            </p>
+
+                <div style="border-width: 1px;" class="code panel">
+        <div class="panelContent">
+            <script type="syntaxhighlighter" class="brush: xml; gutter: false; toolbar: false">
+                <![CDATA[<UFXMsg direction="Rq" msg_type="Application" scheme="WAY4Appl" version="2.0">
+    <MsgId>AAA-555-333-EEE-23124141</MsgId>
+    <Source app="Web01"/>
+    <MsgData>
+        <Application>
+            <RegNumber>AA_XML_03_001</RegNumber>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>Client</ObjectType>
+            <ActionType>Add</ActionType>
+            <Data>
+                <Client>
+                    <ClientType>PR</ClientType>
+                    <ClientInfo>
+                        <ClientNumber>XML_AA_01_num</ClientNumber>
+                        <RegNumber>XML_AA_01_reg</RegNumber>
+                        <ShortName>XML_AA_01_short</ShortName>
+                        <Title>MR</Title>
+                        <FirstName>aFirstName</FirstName>
+                        <LastName>aLastName</LastName>
+                        <MiddleName>aFathersName</MiddleName>
+                        <SecurityName>aSecurityName</SecurityName>
+                        <Position>aProfession</Position>
+                        <CompanyName>aCompanyName</CompanyName>
+                        <CompanyTradeName>aCompanyTradeName</CompanyTradeName>
+                        <BirthDate>1967-08-13</BirthDate>
+                        <BirthPlace>aBirthPlace</BirthPlace>
+                        <BirthName>aBirthName</BirthName>
+                    </ClientInfo>
+                    <PlasticInfo>
+                        <FirstName>SASHKA</FirstName>
+                        <LastName>BESFAMILNY</LastName>
+                    </PlasticInfo>
+                    <PhoneList>
+                        <Phone>
+                            <PhoneType>Work</PhoneType>
+                            <PhoneNumber>Work</PhoneNumber>
+                        </Phone>
+                        <Phone>
+                            <PhoneType>Home</PhoneType>
+                            <PhoneNumber>Home</PhoneNumber>
+                        </Phone>
+                        <Phone>
+                            <PhoneType>Mobile</PhoneType>
+                            <PhoneNumber>Mobile</PhoneNumber>
+                        </Phone>
+                    </PhoneList>
+                    <DateOpen>2001-01-01</DateOpen>
+                    <DateExpiry>2009-12-31</DateExpiry>
+                    <AddInfo>
+                        <ADDINFO01>1_3456789_12345678_12345678_12345678_12345678_12345678_12345678_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_1234567890</ADDINFO01>
+                        <ADDINFO02>2_3456789_12345678_12345678_12345678_12345678_12345678_12345678_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_1234567890</ADDINFO02>
+                        <ADDINFO03>3_3456789_12345678_12345678_12345678_12345678_12345678_12345678_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_1234567890</ADDINFO03>
+                        <ADDINFO04>4_3456789_12345678_12345678_12345678_12345678_12345678_12345678_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_1234567890</ADDINFO04>
+                        <ADDDATE02>1981-08-13</ADDDATE02>
+                        <ADDDATE01>1981-08-13 12:13:14</ADDDATE01>
+                    </AddInfo>
+                </Client>
+            </Data>
+        </Application>
+    </MsgData>
+</UFXMsg>
+]]>
+            </script>
+        </div>
+    </div>
+        
+        
+                                                                
+                    <h4>Response</h4>
+
+            <p>
+                
+            </p>
+
+                <div style="border-width: 1px;" class="code panel">
+        <div class="panelContent">
+            <script type="syntaxhighlighter" class="brush: xml; gutter: false; toolbar: false">
+                <![CDATA[<UFXMsg direction="Rs" msg_type="Application" resp_class="I" resp_code="0" scheme="WAY4Appl" version="2.0">
+    <MsgId>AAA-555-333-EEE-23124141</MsgId>
+    <Source app="Web01"/>
+    <MsgData>
+        <Application>
+            <RegNumber>AA_XML_03_001</RegNumber>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>Client</ObjectType>
+            <ActionType>Add</ActionType>
+            <DataRs>
+                <ClientRs>
+                    <Client>
+                        <OrderDprt>0101</OrderDprt>
+                        <ClientInfo>
+                            <ClientNumber>XML_AA_01_num</ClientNumber>
+                            <RegNumber>XML_AA_01_reg</RegNumber>
+                            <ShortName>XML_AA_01_short</ShortName>
+                            <Title>MR</Title>
+                            <FirstName>aFirstName</FirstName>
+                            <LastName>aLastName</LastName>
+                            <MiddleName>aFathersName</MiddleName>
+                            <SecurityName>aSecurityName</SecurityName>
+                            <Position>aProfession</Position>
+                            <CompanyName>aCompanyName</CompanyName>
+                            <CompanyTradeName>aCompanyTradeName</CompanyTradeName>
+                            <BirthDate>1967-08-13</BirthDate>
+                            <BirthPlace>aBirthPlace</BirthPlace>
+                            <BirthName>aBirthName</BirthName>
+                        </ClientInfo>
+                        <PlasticInfo>
+                            <FirstName>SASHKA</FirstName>
+                            <LastName>BESFAMILNY</LastName>
+                        </PlasticInfo>
+                        <PhoneList>
+                            <Phone>
+                                <PhoneType>Work</PhoneType>
+                                <PhoneNumber>Work</PhoneNumber>
+                            </Phone>
+                            <Phone>
+                                <PhoneType>Home</PhoneType>
+                                <PhoneNumber>Home</PhoneNumber>
+                            </Phone>
+                            <Phone>
+                                <PhoneType>Mobile</PhoneType>
+                                <PhoneNumber>Mobile</PhoneNumber>
+                            </Phone>
+                        </PhoneList>
+                        <DateOpen>2001-01-01</DateOpen>
+                        <DateExpiry>2009-12-31</DateExpiry>
+                        <AddInfo>
+                            <AddInfo01>1_3456789_12345678_12345678_12345678_12345678_12345678_12345678_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_1234567890</AddInfo01>
+                            <AddInfo02>2_3456789_12345678_12345678_12345678_12345678_12345678_12345678_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_1234567890</AddInfo02>
+                            <AddInfo03>3_3456789_12345678_12345678_12345678_12345678_12345678_12345678_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_1234567890</AddInfo03>
+                            <AddInfo04>4_3456789_12345678_12345678_12345678_12345678_12345678_12345678_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_1234567890</AddInfo04>
+                            <AddDate01>1981-08-13</AddDate01>
+                            <AddDate02>1981-08-13</AddDate02>
+                        </AddInfo>
+                    </Client>
+                    <Info/>
+                </ClientRs>
+            </DataRs>
+            <Status>
+                <RespClass>Information</RespClass>
+                <RespCode>0</RespCode>
+                <RespText>Successfully processed</RespText>
+            </Status>
+        </Application>
+    </MsgData>
+</UFXMsg>
+]]>
+            </script>
+        </div>
+    </div>
+        
+
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    SyntaxHighlighter.all();
+</script>
+
+</body>
+</html>

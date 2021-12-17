@@ -1,0 +1,313 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UFX Protocol by Example - Request for Contract and its Related Contracts, each with parent contract, client and balances</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <link rel="stylesheet" type="text/css" href="../css/mine.css" media="all">
+
+    <link href="../css/shCore.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/shThemeDefault.css" rel="stylesheet" type="text/css"/>
+
+    <script src="../js/shCore.js" type="text/javascript"></script>
+    <script src="../js/shBrushXml.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="main">
+
+        <div id="main-header">
+        <h1 id="title-heading" class="pagetitle">
+            <a href="../index.html"><img class="logo" alt="" src="../img/global.png"></a>
+            <span id="title-text"><a href="../index.html">UFX Protocol by Example</a></span>
+        </h1>
+    </div>
+
+    <div class="content">
+
+
+        <h2 class="content-heading">Request for Contract and its Related Contracts, each with parent contract, client and balances</h2>
+
+        <p>
+            
+        </p>
+
+                    <h4>Request</h4>
+
+            <p>
+                
+            </p>
+
+                <div style="border-width: 1px;" class="code panel">
+        <div class="panelContent">
+            <script type="syntaxhighlighter" class="brush: xml; gutter: false; toolbar: false">
+                <![CDATA[<UFXMsg direction="Rq" msg_type="Information" scheme="WAY4Appl" version="2.0">
+    <MsgId>AAA-555-333-EEE-23124141</MsgId>
+    <Source app="WebBanking"/>
+    <MsgData>
+        <Information>
+            <RegNumber>AAA-0002-54554</RegNumber>
+            <Institution>0001</Institution>
+            <InstitutionIDType>Branch</InstitutionIDType>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>Contract</ObjectType>
+            <ActionType>Inquiry</ActionType>
+            <ResultDtls>
+                <Parm>
+                    <ParmCode>RelatedContract</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>Parent</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>Client</ParmCode>
+                    <Value>IDT</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>Balance</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+            </ResultDtls>
+            <ObjectFor>
+                <ContractIDT>
+                    <ContractNumber>1234567890123456</ContractNumber>
+                </ContractIDT>
+            </ObjectFor>
+        </Information>
+    </MsgData>
+</UFXMsg>
+]]>
+            </script>
+        </div>
+    </div>
+        
+        
+                                                                
+                    <h4>Response</h4>
+
+            <p>
+                
+            </p>
+
+                <div style="border-width: 1px;" class="code panel">
+        <div class="panelContent">
+            <script type="syntaxhighlighter" class="brush: xml; gutter: false; toolbar: false">
+                <![CDATA[<UFXMsg direction="Rs" msg_type="Information" resp_class="I" resp_code="0" scheme="WAY4Appl" version="2.0">
+    <MsgId>AAA-555-333-EEE-23124141</MsgId>
+    <Source app="WebBanking"/>
+    <MsgData>
+        <Information>
+            <RegNumber>AAA-0002-54554</RegNumber>
+            <Institution>0001</Institution>
+            <InstitutionIDType>Branch</InstitutionIDType>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>Contract</ObjectType>
+            <ActionType>Inquiry</ActionType>
+            <ResultDtls>
+                <Parm>
+                    <ParmCode>RelatedContract</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>Parent</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>Client</ParmCode>
+                    <Value>IDT</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>Balance</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+            </ResultDtls>
+            <ObjectFor>
+                <ContractIDT>
+                    <ContractNumber>1234567890123456</ContractNumber>
+                </ContractIDT>
+            </ObjectFor>
+            <DataRs>
+                <ContractRs>
+                    <Contract>
+                        <MainContract>
+                            <ContractIDT>
+                                <ContractNumber>001-P-223659</ContractNumber>
+                                <RBSNumber>RN21</RBSNumber>
+                            </ContractIDT>
+                        </MainContract>
+                        <ContractIDT>
+                            <ContractNumber>1234567890123456</ContractNumber>
+                            <Client>
+                                <ClientInfo>
+                                    <ClientNumber>BOSS123456</ClientNumber>
+                                    <RegNumber>BOSS654321</RegNumber>
+                                    <ShortName>BIG BOSS</ShortName>
+                                </ClientInfo>
+                            </Client>
+                        </ContractIDT>
+                        <Currency>RUR</Currency>
+                        <ContractName>CORPORATION CONTRACT</ContractName>
+                        <DateOpen>2001-01-01</DateOpen>
+                        <AddContractInfo>
+                            <AddInfo01>Special Corporate Info</AddInfo01>
+                            <AddInfo02>AG</AddInfo02>
+                        </AddContractInfo>
+                    </Contract>
+                    <Info>
+                        <Balances>
+                            <Balance>
+                                <Code>Balance</Code>
+                                <Amount>994300</Amount>
+                                <Currency>RUR</Currency>
+                            </Balance>
+                            <Balance>
+                                <Code>Credit Limit</Code>
+                                <Amount>10000</Amount>
+                                <Currency>RUR</Currency>
+                            </Balance>
+                            <Balance>
+                                <Code>Amount Available</Code>
+                                <Amount>1004300</Amount>
+                                <Currency>RUR</Currency>
+                            </Balance>
+                        </Balances>
+                        <RelatedContracts>
+                            <RelatedContract>
+                                <Contract>
+                                    <MainContract>
+                                        <ContractIDT>
+                                            <ContractNumber>001-P-444555</ContractNumber>
+                                            <RBSNumber>RN22</RBSNumber>
+                                        </ContractIDT>
+                                    </MainContract>
+                                    <ContractIDT>
+                                        <ContractNumber>1234567890123456</ContractNumber>
+                                        <Relation>10</Relation>
+                                        <Client>
+                                            <ClientInfo>
+                                                <ClientNumber>CN22</ClientNumber>
+                                                <RegNumber>RN22</RegNumber>
+                                                <ShortName>Julie</ShortName>
+                                            </ClientInfo>
+                                        </Client>
+                                    </ContractIDT>
+                                    <Currency>RUR</Currency>
+                                    <ContractName>Julie's Contract</ContractName>
+                                    <PlasticInfo>
+                                        <FirstName>JULIE</FirstName>
+                                        <LastName>OSVALD</LastName>
+                                    </PlasticInfo>
+                                    <DateOpen>2003-02-03</DateOpen>
+                                    <AddContractInfo>
+                                        <AddInfo02>AG</AddInfo02>
+                                    </AddContractInfo>
+                                </Contract>
+                                <Info>
+                                    <Balances>
+                                        <Balance>
+                                            <Code>Balance</Code>
+                                            <Amount>994300</Amount>
+                                            <Currency>RUR</Currency>
+                                        </Balance>
+                                        <Balance>
+                                            <Code>Credit Limit</Code>
+                                            <Amount>10000</Amount>
+                                            <Currency>RUR</Currency>
+                                        </Balance>
+                                        <Balance>
+                                            <Code>Amount Available</Code>
+                                            <Amount>1004300</Amount>
+                                            <Currency>RUR</Currency>
+                                        </Balance>
+                                    </Balances>
+                                </Info>
+                            </RelatedContract>
+                            <RelatedContract>
+                                <Contract>
+                                    <MainContract>
+                                        <ContractIDT>
+                                            <ContractNumber>001-P-444666</ContractNumber>
+                                            <RBSNumber>RN23</RBSNumber>
+                                        </ContractIDT>
+                                    </MainContract>
+                                    <ContractIDT>
+                                        <ContractNumber>1234567890123456</ContractNumber>
+                                        <Relation>20</Relation>
+                                        <Client>
+                                            <ClientInfo>
+                                                <ClientNumber>CN21</ClientNumber>
+                                                <RegNumber>RN21</RegNumber>
+                                                <ShortName>Tom</ShortName>
+                                            </ClientInfo>
+                                        </Client>
+                                    </ContractIDT>
+                                    <Currency>RUR</Currency>
+                                    <ContractName>Tom's Contract</ContractName>
+                                    <PlasticInfo>
+                                        <FirstName>TOM</FirstName>
+                                        <LastName>WITKINS</LastName>
+                                    </PlasticInfo>
+                                    <DateOpen>2003-02-03</DateOpen>
+                                    <AddContractInfo>
+                                        <AddInfo02>AG</AddInfo02>
+                                    </AddContractInfo>
+                                </Contract>
+                                <Info>
+                                    <Balances>
+                                        <Balance>
+                                            <Code>Balance</Code>
+                                            <Amount>994300</Amount>
+                                            <Currency>RUR</Currency>
+                                        </Balance>
+                                        <Balance>
+                                            <Code>Credit Limit</Code>
+                                            <Amount>10000</Amount>
+                                            <Currency>RUR</Currency>
+                                        </Balance>
+                                        <Balance>
+                                            <Code>Amount Available</Code>
+                                            <Amount>1004300</Amount>
+                                            <Currency>RUR</Currency>
+                                        </Balance>
+                                    </Balances>
+                                </Info>
+                            </RelatedContract>
+                        </RelatedContracts>
+                    </Info>
+                </ContractRs>
+            </DataRs>
+            <Status>
+                <RespClass>Information</RespClass>
+                <RespCode>0</RespCode>
+                <RespText>Successfully processed</RespText>
+            </Status>
+        </Information>
+    </MsgData>
+</UFXMsg>
+]]>
+            </script>
+        </div>
+    </div>
+        
+
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    SyntaxHighlighter.all();
+</script>
+
+</body>
+</html>

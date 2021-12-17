@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationFile>
+    <FileHeader>
+        <FormatVersion>2.0</FormatVersion>
+        <Sender>000100</Sender>
+        <CreationDate>2012-02-17</CreationDate>
+        <CreationTime>01:02:30</CreationTime>
+        <Number>07</Number>
+        <Institution>0001</Institution>
+    </FileHeader>
+    <ApplicationsList>
+        <Application>
+            <RegNumber>AA_XML_07_001</RegNumber>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>ClientAddress</ObjectType>
+            <ActionType>Update</ActionType>
+            <ObjectFor>
+                <ClientIDT>
+                    <ClientInfo>
+                        <ClientNumber>XML_AA_01_num</ClientNumber>
+                        <ShortName>XML_AA_01_short</ShortName>
+                    </ClientInfo>
+                </ClientIDT>
+            </ObjectFor>
+            <Data>
+                <Address>
+                    <AddressType>STMT</AddressType>
+                    <DeliveryType>SMDT</DeliveryType>
+                    <FirstName>Ivan</FirstName>
+                    <LastName>Ivanov</LastName>
+                    <EMail>new_i.ivanov@mail.ru_01</EMail>
+                    <Country>RUS</Country>
+                    <City>Ekaterinburg</City>
+                    <PostalCode>999111</PostalCode>
+                    <AddressLine1>new_AddressLine1</AddressLine1>
+                    <AddressLine2>new_AddressLine2</AddressLine2>
+                    <AddressLine3>new_AddressLine3</AddressLine3>
+                    <AddressLine4>new_AddressLine4</AddressLine4>
+                    <ActivityPeriod>
+                        <DateFrom>2003-03-17</DateFrom>
+                        <DateTo>2015-08-25</DateTo>
+                    </ActivityPeriod>
+                </Address>
+            </Data>
+        </Application>
+    </ApplicationsList>
+</ApplicationFile>

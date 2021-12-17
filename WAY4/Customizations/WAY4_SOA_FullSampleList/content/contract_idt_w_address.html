@@ -1,0 +1,177 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UFX Protocol by Example - Request for Identifier of the Contract with addresses.  Contract is identified by Contract Number. Search result is not checked.</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <link rel="stylesheet" type="text/css" href="../css/mine.css" media="all">
+
+    <link href="../css/shCore.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/shThemeDefault.css" rel="stylesheet" type="text/css"/>
+
+    <script src="../js/shCore.js" type="text/javascript"></script>
+    <script src="../js/shBrushXml.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="main">
+
+        <div id="main-header">
+        <h1 id="title-heading" class="pagetitle">
+            <a href="../index.html"><img class="logo" alt="" src="../img/global.png"></a>
+            <span id="title-text"><a href="../index.html">UFX Protocol by Example</a></span>
+        </h1>
+    </div>
+
+    <div class="content">
+
+
+        <h2 class="content-heading">Request for Identifier of the Contract with addresses.  Contract is identified by Contract Number. Search result is not checked.</h2>
+
+        <p>
+            
+        </p>
+
+                    <h4>Request</h4>
+
+            <p>
+                
+            </p>
+
+                <div style="border-width: 1px;" class="code panel">
+        <div class="panelContent">
+            <script type="syntaxhighlighter" class="brush: xml; gutter: false; toolbar: false">
+                <![CDATA[<UFXMsg direction="Rq" msg_type="Information" scheme="WAY4Appl" version="2.0">
+    <MsgId>AAA-555-333-EEE-23124141</MsgId>
+    <Source app="WebBanking"/>
+    <MsgData>
+        <Information>
+            <RegNumber>AAA-0002-54554</RegNumber>
+            <Institution>0001</Institution>
+            <InstitutionIDType>Branch</InstitutionIDType>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>Contract</ObjectType>
+            <ActionType>Inquiry</ActionType>
+            <ResultDtls>
+                <Parm>
+                    <ParmCode>Contract</ParmCode>
+                    <Value>IDT</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>Address</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+            </ResultDtls>
+            <ObjectFor>
+                <ContractIDT>
+                    <ContractNumber>1234567890123456</ContractNumber>
+                </ContractIDT>
+            </ObjectFor>
+        </Information>
+    </MsgData>
+</UFXMsg>
+]]>
+            </script>
+        </div>
+    </div>
+        
+        
+                                                                
+                    <h4>Response</h4>
+
+            <p>
+                
+            </p>
+
+                <div style="border-width: 1px;" class="code panel">
+        <div class="panelContent">
+            <script type="syntaxhighlighter" class="brush: xml; gutter: false; toolbar: false">
+                <![CDATA[<UFXMsg direction="Rs" msg_type="Information" resp_class="I" resp_code="0" scheme="WAY4Appl" version="2.0">
+    <MsgId>AAA-555-333-EEE-23124141</MsgId>
+    <Source app="WebBanking"/>
+    <MsgData>
+        <Information>
+            <RegNumber>AAA-0002-54554</RegNumber>
+            <Institution>0001</Institution>
+            <InstitutionIDType>Branch</InstitutionIDType>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>Contract</ObjectType>
+            <ActionType>Inquiry</ActionType>
+            <ResultDtls>
+                <Parm>
+                    <ParmCode>Contract</ParmCode>
+                    <Value>IDT</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>Address</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+            </ResultDtls>
+            <ObjectFor>
+                <ContractIDT>
+                    <ContractNumber>001-P-223659</ContractNumber>
+                </ContractIDT>
+            </ObjectFor>
+            <DataRs>
+                <ContractRs>
+                    <Contract>
+                        <ContractIDT>
+                            <ContractNumber>001-324233</ContractNumber>
+                            <RBSNumber>RN21</RBSNumber>
+                        </ContractIDT>
+                    </Contract>
+                    <Info>
+                        <Addresses>
+                            <AddressRs>
+                                <Address>
+                                    <AddressType>PIN</AddressType>
+                                    <EMail>julie-pin@gmail.com</EMail>
+                                    <Country>GBR</Country>
+                                    <City>London</City>
+                                    <PostalCode>789</PostalCode>
+                                    <AddressLine1>PIN Address Line 1</AddressLine1>
+                                    <AddressLine2>PIN Address Line 2</AddressLine2>
+                                    <AddressLine3>PIN Address Line 3</AddressLine3>
+                                    <AddressLine4>PIN Address Line 4</AddressLine4>
+                                </Address>
+                                <Info>
+                                    <Status>Active</Status>
+                                </Info>
+                            </AddressRs>
+                        </Addresses>
+                    </Info>
+                </ContractRs>
+            </DataRs>
+            <Status>
+                <RespClass>Information</RespClass>
+                <RespCode>0</RespCode>
+                <RespText>Successfully processed</RespText>
+            </Status>
+        </Information>
+    </MsgData>
+</UFXMsg>
+]]>
+            </script>
+        </div>
+    </div>
+        
+
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    SyntaxHighlighter.all();
+</script>
+
+</body>
+</html>

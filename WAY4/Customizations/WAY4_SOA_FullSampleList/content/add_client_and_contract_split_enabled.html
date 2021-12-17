@@ -1,0 +1,284 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UFX Protocol by Example - Add Client and Contract. Contract application has enabled <Split> tag.</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <link rel="stylesheet" type="text/css" href="../css/mine.css" media="all">
+
+    <link href="../css/shCore.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/shThemeDefault.css" rel="stylesheet" type="text/css"/>
+
+    <script src="../js/shCore.js" type="text/javascript"></script>
+    <script src="../js/shBrushXml.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="main">
+
+        <div id="main-header">
+        <h1 id="title-heading" class="pagetitle">
+            <a href="../index.html"><img class="logo" alt="" src="../img/global.png"></a>
+            <span id="title-text"><a href="../index.html">UFX Protocol by Example</a></span>
+        </h1>
+    </div>
+
+    <div class="content">
+
+
+        <h2 class="content-heading">Add Client and Contract. Contract application has enabled <Split> tag.</h2>
+
+        <p>
+            
+        </p>
+
+                    <h4>Request</h4>
+
+            <p>
+                
+            </p>
+
+                <div style="border-width: 1px;" class="code panel">
+        <div class="panelContent">
+            <script type="syntaxhighlighter" class="brush: xml; gutter: false; toolbar: false">
+                <![CDATA[<UFXMsg direction="Rq" msg_type="Application" scheme="WAY4Appl" version="2.0">
+    <MsgId>AAA-555-333-EEE-23124141</MsgId>
+    <Source app="Web01"/>
+    <MsgData>
+        <Application>
+            <RegNumber>AA_XML_05_013</RegNumber>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>Client</ObjectType>
+            <ActionType>Add</ActionType>
+            <ResultDtls>
+                <Parm>
+                    <ParmCode>AcceptRq</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+            </ResultDtls>
+            <Data>
+                <Client>
+                    <ClientType>PR</ClientType>
+                    <ClientInfo>
+                        <ClientNumber>XML_AA_05_99_num_123456789123456</ClientNumber>
+                        <RegNumberType>XML_AA_05_99_reg_number_type_456</RegNumberType>
+                        <RegNumber>XML_AA_05_99_reg_123456789123456</RegNumber>
+                        <RegNumberDetails>XML_AA_05_99_reg_details_789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234!!</RegNumberDetails>
+                        <ShortName>XML_AA_05_99_short_1234568912456</ShortName>
+                        <Title>MR</Title>
+                        <FirstName>XML_AA_05_99_first_3456789123456</FirstName>
+                        <LastName>XML_AA_05_99_last_23456789123456</LastName>
+                        <MiddleName>XML_AA_05_99_middle_name_9123456</MiddleName>
+                        <SecurityName>XML_AA_05_99_security_name_23456</SecurityName>
+                        <Country>LTU</Country>
+                        <Language>G</Language>
+                        <MaritalStatus>D</MaritalStatus>
+                        <Position>XML_AA_05_99_profession_12323456</Position>
+                        <CompanyName>XML_AA_05_99_company_name_</CompanyName>
+                        <CompanyTradeName>XML_AA_05_99_trade_name_!</CompanyTradeName>
+                        <BirthDate>1967-08-13</BirthDate>
+                        <BirthPlace>XML_AA_05_99_birth_place_2323456</BirthPlace>
+                        <BirthName>XML_AA_05_99_birth_name_12323456</BirthName>
+                        <Gender>Male</Gender>
+                    </ClientInfo>
+                    <PlasticInfo>
+                        <Title>MR</Title>
+                        <FirstName>XML</FirstName>
+                        <LastName>NEW</LastName>
+                        <CompanyName>COMPANY</CompanyName>
+                    </PlasticInfo>
+                    <PhoneList>
+                        <Phone>
+                            <PhoneType>Work</PhoneType>
+                            <PhoneNumber>XML_AA_05_99_work_phone_89123456</PhoneNumber>
+                        </Phone>
+                        <Phone>
+                            <PhoneType>Home</PhoneType>
+                            <PhoneNumber>XML_AA_05_99_home_phone_89123456</PhoneNumber>
+                        </Phone>
+                        <Phone>
+                            <PhoneType>Mobile</PhoneType>
+                            <PhoneNumber>XML_AA_05_99_cell_phone_89123456</PhoneNumber>
+                        </Phone>
+                    </PhoneList>
+                    <DateOpen>2001-01-01</DateOpen>
+                    <DateExpiry>2009-12-31</DateExpiry>
+                    <BaseAddress>
+                        <EMail>XML_AA_05_99_email_123456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234!!</EMail>
+                        <Country>GBR</Country>
+                        <City>XML_AA_05_99_city_12345689123456</City>
+                        <PostalCode>00334</PostalCode>
+                        <AddressLine1>XML_AA_05_99_address_line_1_992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234!!</AddressLine1>
+                        <AddressLine2>XML_AA_05_99_address_line_2_992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234!!</AddressLine2>
+                        <AddressLine3>XML_AA_05_99_address_line_3_992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234!!</AddressLine3>
+                        <AddressLine4>XML_AA_05_99_address_line_4_992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234!!</AddressLine4>
+                        <ActivityPeriod>
+                            <DateFrom>1967-08-13</DateFrom>
+                            <DateTo>2009-08-13</DateTo>
+                        </ActivityPeriod>
+                    </BaseAddress>
+                </Client>
+            </Data>
+            <SubApplList>
+                <Application>
+                    <RegNumber>AA_XML_05_013_01</RegNumber>
+                    <ObjectType>Contract</ObjectType>
+                    <ActionType>Add</ActionType>
+                    <ResultDtls>
+                        <Parm>
+                            <ParmCode>AcceptRq</ParmCode>
+                            <Value>Y</Value>
+                        </Parm>
+                    </ResultDtls>
+                    <Data>
+                        <Contract>
+                            <ContractIDT>
+                                <ContractNumber>XML-AA-20-099</ContractNumber>
+                                <RBSNumber>XML-AA-20-099-rbs_15678912345678</RBSNumber>
+                            </ContractIDT>
+                            <ContractName>XML_AA_05_99_contract_name_12456</ContractName>
+                            <CommentText>xml_commenttext_890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234!!</CommentText>
+                            <Product>
+                                <AccountScheme>FLOC</AccountScheme>
+                                <ContractSubType>CA-p</ContractSubType>
+                                <ServicePack>PIA</ServicePack>
+                            </Product>
+                            <DateOpen>2002-10-24</DateOpen>
+                            <AddContractInfo>
+                                <ADDINFO01>1_3456789_12345678_12345678_12345678_12345678_12345678_12345678_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_1234567890</ADDINFO01>
+                                <ADDINFO02>2_3456789_12345678_12345678_12345678_12345678_12345678_12345678_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_1234567890</ADDINFO02>
+                                <ADDINFO03>3_3456789_12345678_12345678_12345678_12345678_12345678_12345678_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_1234567890</ADDINFO03>
+                                <ADDINFO04>4_3456789_12345678_12345678_12345678_12345678_12345678_12345678_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_1234567890</ADDINFO04>
+                                <ADDDATE02>1911-08-16</ADDDATE02>
+                                <ADDDATE01>1981-08-13 12:13:14</ADDDATE01>
+                            </AddContractInfo>
+                        </Contract>
+                    </Data>
+                    <AddData>
+                        <Split>Yes</Split>
+                    </AddData>
+                </Application>
+            </SubApplList>
+        </Application>
+    </MsgData>
+</UFXMsg>
+]]>
+            </script>
+        </div>
+    </div>
+        
+        
+                                                                
+                    <h4>Response</h4>
+
+            <p>
+                
+            </p>
+
+                <div style="border-width: 1px;" class="code panel">
+        <div class="panelContent">
+            <script type="syntaxhighlighter" class="brush: xml; gutter: false; toolbar: false">
+                <![CDATA[<UFXMsg direction="Rs" msg_type="Application" resp_class="I" resp_code="0" scheme="WAY4Appl" version="2.0">
+    <MsgId>AAA-555-333-EEE-23124141</MsgId>
+    <Source app="Web01"/>
+    <MsgData>
+        <Application>
+            <RegNumber>AA_XML_05_013</RegNumber>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>Client</ObjectType>
+            <ActionType>Add</ActionType>
+            <DataRs>
+                <ClientRs>
+                    <Client>
+                        <OrderDprt>0101</OrderDprt>
+                        <ClientInfo>
+                            <ClientNumber>XML_AA_05_99_num_123456789123456</ClientNumber>
+                            <RegNumberType>XML_AA_05_99_reg_number_type_456</RegNumberType>
+                            <RegNumber>XML_AA_05_99_reg_123456789123456</RegNumber>
+                            <RegNumberDetails>XML_AA_05_99_reg_details_789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234!!</RegNumberDetails>
+                            <ShortName>XML_AA_05_99_short_1234568912456</ShortName>
+                            <Title>MR</Title>
+                            <FirstName>XML_AA_05_99_first_3456789123456</FirstName>
+                            <LastName>XML_AA_05_99_last_23456789123456</LastName>
+                            <MiddleName>XML_AA_05_99_middle_name_9123456</MiddleName>
+                            <SecurityName>XML_AA_05_99_security_name_23456</SecurityName>
+                            <Country>GBR</Country>
+                            <Language>G</Language>
+                            <MaritalStatus>D</MaritalStatus>
+                            <Position>XML_AA_05_99_profession_12323456</Position>
+                            <CompanyName>XML_AA_05_99_company_name_</CompanyName>
+                            <CompanyTradeName>XML_AA_05_99_trade_name_!</CompanyTradeName>
+                            <BirthDate>1967-08-13</BirthDate>
+                            <BirthPlace>XML_AA_05_99_birth_place_2323456</BirthPlace>
+                            <BirthName>XML_AA_05_99_birth_name_12323456</BirthName>
+                            <Gender>Male</Gender>
+                        </ClientInfo>
+                        <PlasticInfo>
+                            <Title>MR</Title>
+                            <FirstName>XML</FirstName>
+                            <LastName>NEW</LastName>
+                            <CompanyName>COMPANY</CompanyName>
+                        </PlasticInfo>
+                        <PhoneList>
+                            <Phone>
+                                <PhoneType>Work</PhoneType>
+                                <PhoneNumber>XML_AA_05_99_work_phone_89123456</PhoneNumber>
+                            </Phone>
+                            <Phone>
+                                <PhoneType>Home</PhoneType>
+                                <PhoneNumber>XML_AA_05_99_home_phone_89123456</PhoneNumber>
+                            </Phone>
+                            <Phone>
+                                <PhoneType>Mobile</PhoneType>
+                                <PhoneNumber>XML_AA_05_99_cell_phone_89123456</PhoneNumber>
+                            </Phone>
+                        </PhoneList>
+                        <DateOpen>2001-01-01</DateOpen>
+                        <DateExpiry>2009-12-31</DateExpiry>
+                        <BaseAddress>
+                            <EMail>XML_AA_05_99_email_123456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234!!</EMail>
+                            <City>XML_AA_05_99_city_12345689123456</City>
+                            <PostalCode>00334</PostalCode>
+                            <AddressLine1>XML_AA_05_99_address_line_1_992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234!!</AddressLine1>
+                            <AddressLine2>XML_AA_05_99_address_line_2_992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234!!</AddressLine2>
+                            <AddressLine3>XML_AA_05_99_address_line_3_992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234!!</AddressLine3>
+                            <AddressLine4>XML_AA_05_99_address_line_4_992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234567899923456789992345678999234!!</AddressLine4>
+                        </BaseAddress>
+                        <AddInfo/>
+                    </Client>
+                    <Info/>
+                </ClientRs>
+            </DataRs>
+            <Status>
+                <RespClass>Information</RespClass>
+                <RespCode>0</RespCode>
+                <RespText>Successfully processed</RespText>
+            </Status>
+        </Application>
+    </MsgData>
+</UFXMsg>
+]]>
+            </script>
+        </div>
+    </div>
+        
+
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    SyntaxHighlighter.all();
+</script>
+
+</body>
+</html>

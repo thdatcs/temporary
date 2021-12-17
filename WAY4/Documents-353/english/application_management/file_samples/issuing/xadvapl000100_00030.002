@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationFile>
+    <FileHeader>
+        <FormatVersion>2.0</FormatVersion>
+        <Sender>000100</Sender>
+        <CreationDate>2012-02-21</CreationDate>
+        <CreationTime>01:02:30</CreationTime>
+        <Number>30</Number>
+        <Institution>0001</Institution>
+    </FileHeader>
+    <ApplicationsList>
+        <Application>
+            <RegNumber>AA_XML_30_002</RegNumber>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>ContractAddInfo</ObjectType>
+            <ActionType>Add</ActionType>
+            <ObjectFor>
+                <ContractIDT>
+                    <ContractNumber>XML-AA-001</ContractNumber>
+                    <Client>
+                        <ClientInfo>
+                            <ShortName>XML_AA_01_short</ShortName>
+                        </ClientInfo>
+                    </Client>
+                </ContractIDT>
+            </ObjectFor>
+            <Data>
+                <AppInfo>
+                    <InfoType>XML_AA_TEST_CON_APPL_INFO_TYPE11</InfoType>
+                    <AddInfo01>1_ACNT12345678</AddInfo01>
+                    <AddInfo02>2_ACNT12345678_12345678</AddInfo02>
+                    <AddInfo03>3_ACNT12345678_12345678_12345678</AddInfo03>
+                    <AddInfo04>4_ACNT12345678_12345678</AddInfo04>
+                    <AddInfo05>5_ACNT12345678</AddInfo05>
+                    <AddDate01>1900-08-11 11:11:11</AddDate01>
+                    <AddDate02>1922-08-22 12:11:11</AddDate02>
+                    <AddNum01>1034567890123456</AddNum01>
+                </AppInfo>
+            </Data>
+        </Application>
+    </ApplicationsList>
+</ApplicationFile>

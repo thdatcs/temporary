@@ -1,0 +1,419 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UFX Protocol by Example - Request for contract information with balance and usage information searching by client RegNumber.</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <link rel="stylesheet" type="text/css" href="../css/mine.css" media="all">
+
+    <link href="../css/shCore.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/shThemeDefault.css" rel="stylesheet" type="text/css"/>
+
+    <script src="../js/shCore.js" type="text/javascript"></script>
+    <script src="../js/shBrushXml.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="main">
+
+        <div id="main-header">
+        <h1 id="title-heading" class="pagetitle">
+            <a href="../index.html"><img class="logo" alt="" src="../img/global.png"></a>
+            <span id="title-text"><a href="../index.html">UFX Protocol by Example</a></span>
+        </h1>
+    </div>
+
+    <div class="content">
+
+
+        <h2 class="content-heading">Request for contract information with balance and usage information searching by client RegNumber.</h2>
+
+        <p>
+            
+        </p>
+
+                    <h4>Request</h4>
+
+            <p>
+                
+            </p>
+
+                <div style="border-width: 1px;" class="code panel">
+        <div class="panelContent">
+            <script type="syntaxhighlighter" class="brush: xml; gutter: false; toolbar: false">
+                <![CDATA[<UFXMsg direction="Rq" msg_type="Information" scheme="WAY4Appl" version="2.0">
+    <MsgId>AAA-555-333-EEE-23124141</MsgId>
+    <Source app="Web01"/>
+    <MsgData>
+        <Information>
+            <RegNumber>client_case_001</RegNumber>
+            <Institution>0001</Institution>
+            <ObjectType>Contract</ObjectType>
+            <ActionType>Inquiry</ActionType>
+            <ResultDtls>
+                <Parm>
+                    <ParmCode>Contract</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>Status</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>FinancialInst</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>Usage</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>Parent</ParmCode>
+                    <Value>IDT</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>Balance</ParmCode>
+                    <Value>AVLAMNT,BLOCKED,CASHLIMIT,RETLIMIT,CREDITLIMIT,OVDLOAN,MINPAYMENT</Value>
+                </Parm>
+            </ResultDtls>
+            <ObjectFor>
+                <ClientIDT>
+                    <ClientType>PNR</ClientType>
+                    <ClientInfo>
+                        <RegNumberType>Passport 123456789 0123456789  1</RegNumberType>
+                        <RegNumber>Mario Brother Reg Number 9123456</RegNumber>
+                    </ClientInfo>
+                </ClientIDT>
+            </ObjectFor>
+        </Information>
+    </MsgData>
+</UFXMsg>
+]]>
+            </script>
+        </div>
+    </div>
+        
+        
+                                                                
+                    <h4>Response</h4>
+
+            <p>
+                
+            </p>
+
+                <div style="border-width: 1px;" class="code panel">
+        <div class="panelContent">
+            <script type="syntaxhighlighter" class="brush: xml; gutter: false; toolbar: false">
+                <![CDATA[<UFXMsg direction="Rs" msg_type="Information" resp_class="I" resp_code="0" scheme="WAY4Appl" version="2.0">
+    <MsgId>AAA-555-333-EEE-23124141</MsgId>
+    <Source app="Web01"/>
+    <MsgData>
+        <Information>
+            <RegNumber>client_case_001</RegNumber>
+            <Institution>0001</Institution>
+            <ObjectType>Contract</ObjectType>
+            <ActionType>Inquiry</ActionType>
+            <ResultDtls>
+                <Parm>
+                    <ParmCode>Contract</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>Status</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>FinancialInst</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>Usage</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>Parent</ParmCode>
+                    <Value>IDT</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>OrderingRule</ParmCode>
+                    <Value>ID</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>Balance</ParmCode>
+                    <Value>AVLAMNT,BLOCKED,CASHLIMIT,RETLIMIT,CREDITLIMIT,OVDLOAN,MINPAYMENT</Value>
+                </Parm>
+            </ResultDtls>
+            <ObjectFor>
+                <ClientIDT>
+                    <ClientType>PNR</ClientType>
+                    <ClientInfo>
+                        <RegNumberType>Passport 123456789 0123456789  1</RegNumberType>
+                        <RegNumber>Mario Brother Reg Number 9123456</RegNumber>
+                    </ClientInfo>
+                </ClientIDT>
+            </ObjectFor>
+            <DataRs>
+                <ContractRs>
+                    <Contract>
+                        <Institution>0001</Institution>
+                        <InstitutionIDType>Branch</InstitutionIDType>
+                        <ContractIDT>
+                            <ContractNumber>001-P-349546</ContractNumber>
+                            <RBSNumber>Mario Brother Acnt RBS num 12348</RBSNumber>
+                        </ContractIDT>
+                        <Currency>RUR</Currency>
+                        <ContractName>Mario Brother acnt ct_name_12456</ContractName>
+                        <CommentText>Mario Brother acnt comment _12345678_12345678_12345678_12345678_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_1234567890</CommentText>
+                        <Product>
+                            <AddInfo>
+                                <Parm>
+                                    <ParmCode>ContractCategory</ParmCode>
+                                    <Value>Account</Value>
+                                </Parm>
+                            </AddInfo>
+                        </Product>
+                        <PlasticInfo>
+                            <FirstName>MARIO</FirstName>
+                            <LastName>CHEZARO</LastName>
+                        </PlasticInfo>
+                        <DateOpen>2003-02-03</DateOpen>
+                        <AddContractInfo>
+                            <AddInfo01>1_3456789_12345678_12345678_12345678_12345678_12345678_12345678_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_1234567890</AddInfo01>
+                            <AddInfo02>AG</AddInfo02>
+                            <AddInfo03>3_3456789_12345678_12345678_12345678_12345678_12345678_12345678_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_1234567890</AddInfo03>
+                            <AddInfo04>4_3456789_12345678_12345678_12345678_12345678_12345678_12345678_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_1234567890</AddInfo04>
+                        </AddContractInfo>
+                    </Contract>
+                    <Info>
+                        <Status>
+                            <StatusClass>Valid</StatusClass>
+                            <StatusCode>00</StatusCode>
+                            <StatusDetails>Account OK</StatusDetails>
+                        </Status>
+                        <Balances>
+                            <Balance>
+                                <Name>AVLAMNT</Name>
+                                <Type>AVLAMNT</Type>
+                                <Amount>0.00</Amount>
+                                <Currency>RUR</Currency>
+                            </Balance>
+                            <Balance>
+                                <Name>BLOCKED</Name>
+                                <Type>BLOCKED</Type>
+                                <Amount>0.00</Amount>
+                                <Currency>RUR</Currency>
+                            </Balance>
+                            <Balance>
+                                <Name>CASHLIMIT</Name>
+                                <Type>CASHLIMIT</Type>
+                                <Amount>0.00</Amount>
+                                <Currency>RUR</Currency>
+                            </Balance>
+                            <Balance>
+                                <Name>RETLIMIT</Name>
+                                <Type>RETLIMIT</Type>
+                                <Amount>0.00</Amount>
+                                <Currency>RUR</Currency>
+                            </Balance>
+                            <Balance>
+                                <Name>CREDITLIMIT</Name>
+                                <Type>CREDITLIMIT</Type>
+                                <Amount>0.00</Amount>
+                                <Currency>RUR</Currency>
+                            </Balance>
+                            <Balance>
+                                <Name>OVDLOAN</Name>
+                                <Type>OVDLOAN</Type>
+                                <Amount>0.00</Amount>
+                                <Currency>RUR</Currency>
+                            </Balance>
+                            <Balance>
+                                <Name>MINPAYMENT</Name>
+                                <Type>MINPAYMENT</Type>
+                                <Amount>0.00</Amount>
+                                <Currency>RUR</Currency>
+                            </Balance>
+                            <Balance>
+                                <Name>Available</Name>
+                                <Type>AVAILABLE</Type>
+                                <Amount>0.00</Amount>
+                                <Currency>RUR</Currency>
+                            </Balance>
+                            <Balance>
+                                <Name>Credit Limit</Name>
+                                <Type>CR_LIMIT</Type>
+                                <Amount>0.00</Amount>
+                                <Currency>RUR</Currency>
+                            </Balance>
+                        </Balances>
+                    </Info>
+                </ContractRs>
+                <ContractRs>
+                    <Contract>
+                        <Institution>0001</Institution>
+                        <InstitutionIDType>Branch</InstitutionIDType>
+                        <ContractIDT>
+                            <ContractNumber>4015500199721238</ContractNumber>
+                            <RBSNumber>Mario Brother Acnt RBS num 12348</RBSNumber>
+                        </ContractIDT>
+                        <Currency>RUR</Currency>
+                        <ContractName>Mario's Contract Card</ContractName>
+                        <Product>
+                            <AddInfo>
+                                <Parm>
+                                    <ParmCode>ContractCategory</ParmCode>
+                                    <Value>Card</Value>
+                                </Parm>
+                            </AddInfo>
+                        </Product>
+                        <ProductionParms>
+                            <CardExpiry>1011</CardExpiry>
+                        </ProductionParms>
+                        <PlasticInfo>
+                            <FirstName>MARIO</FirstName>
+                            <LastName>CHEZARO</LastName>
+                        </PlasticInfo>
+                        <DateOpen>2003-02-05</DateOpen>
+                        <DateExpiry>2011-10-07</DateExpiry>
+                        <AddContractInfo>
+                            <AddInfo01>1_3456789_12345678_12345678_12345678_12345678_12345678_12345678_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_1234567890</AddInfo01>
+                            <AddInfo02>AG</AddInfo02>
+                            <AddInfo03>3_3456789_12345678_12345678_12345678_12345678_12345678_12345678_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_1234567890</AddInfo03>
+                            <AddInfo04>4_3456789_12345678_12345678_12345678_12345678_12345678_12345678_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_1234567890</AddInfo04>
+                        </AddContractInfo>
+                    </Contract>
+                    <Info>
+                        <Status>
+                            <StatusClass>Valid</StatusClass>
+                            <StatusCode>00</StatusCode>
+                            <StatusDetails>Card OK</StatusDetails>
+                            <ProductionStatus>Marked</ProductionStatus>
+                        </Status>
+                        <Balances>
+                            <Balance>
+                                <Name>AVLAMNT</Name>
+                                <Type>AVLAMNT</Type>
+                                <Amount>0.00</Amount>
+                                <Currency>RUR</Currency>
+                            </Balance>
+                            <Balance>
+                                <Name>BLOCKED</Name>
+                                <Type>BLOCKED</Type>
+                                <Amount>0.00</Amount>
+                                <Currency>RUR</Currency>
+                            </Balance>
+                            <Balance>
+                                <Name>CASHLIMIT</Name>
+                                <Type>CASHLIMIT</Type>
+                                <Amount>0.00</Amount>
+                                <Currency>RUR</Currency>
+                            </Balance>
+                            <Balance>
+                                <Name>RETLIMIT</Name>
+                                <Type>RETLIMIT</Type>
+                                <Amount>0.00</Amount>
+                                <Currency>RUR</Currency>
+                            </Balance>
+                            <Balance>
+                                <Name>CREDITLIMIT</Name>
+                                <Type>CREDITLIMIT</Type>
+                                <Amount>0.00</Amount>
+                                <Currency>RUR</Currency>
+                            </Balance>
+                            <Balance>
+                                <Name>OVDLOAN</Name>
+                                <Type>OVDLOAN</Type>
+                                <Amount>0.00</Amount>
+                                <Currency>RUR</Currency>
+                            </Balance>
+                            <Balance>
+                                <Name>MINPAYMENT</Name>
+                                <Type>MINPAYMENT</Type>
+                                <Amount>0.00</Amount>
+                                <Currency>RUR</Currency>
+                            </Balance>
+                            <Balance>
+                                <Name>Available</Name>
+                                <Type>AVAILABLE</Type>
+                                <Amount>0.00</Amount>
+                                <Currency>RUR</Currency>
+                            </Balance>
+                            <Balance>
+                                <Name>Credit Limit</Name>
+                                <Type>CR_LIMIT</Type>
+                                <Amount>11100.15</Amount>
+                                <Currency>RUR</Currency>
+                            </Balance>
+                        </Balances>
+                        <Usages>
+                            <UsageRs>
+                                <Usage>
+                                    <Code>STMT</Code>
+                                    <MaxNumber>1</MaxNumber>
+                                </Usage>
+                                <Info>
+                                    <CurrentNumber>0</CurrentNumber>
+                                    <Status>Active</Status>
+                                </Info>
+                            </UsageRs>
+                            <UsageRs>
+                                <Usage>
+                                    <Code>BAL</Code>
+                                    <MaxNumber>10</MaxNumber>
+                                </Usage>
+                                <Info>
+                                    <CurrentNumber>0</CurrentNumber>
+                                    <Status>Active</Status>
+                                </Info>
+                            </UsageRs>
+                            <UsageRs>
+                                <Usage>
+                                    <Code>A_FR</Code>
+                                    <MaxNumber>100</MaxNumber>
+                                    <MaxAmount>
+                                        <Amount>10000</Amount>
+                                        <Currency>USD</Currency>
+                                    </MaxAmount>
+                                </Usage>
+                                <Info>
+                                    <CurrentNumber>0</CurrentNumber>
+                                    <Status>Active</Status>
+                                </Info>
+                            </UsageRs>
+                        </Usages>
+                    </Info>
+                </ContractRs>
+            </DataRs>
+            <Status>
+                <RespClass>Information</RespClass>
+                <RespCode>0</RespCode>
+                <RespText>Successfully processed</RespText>
+            </Status>
+        </Information>
+    </MsgData>
+</UFXMsg>
+]]>
+            </script>
+        </div>
+    </div>
+        
+
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    SyntaxHighlighter.all();
+</script>
+
+</body>
+</html>

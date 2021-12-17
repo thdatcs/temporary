@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<ApplicationFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///Q:/OW_HOMES/Cards/03_51_99_14/client/shared/pipes/xsd/OffLine/WAY4ApplFile.xsd">
+	<FileHeader>
+		<FormatVersion>2.0</FormatVersion>
+		<Sender>000100</Sender>
+		<CreationDate>2020-05-29</CreationDate>
+		<CreationTime>01:02:30</CreationTime>
+		<Number>09</Number>
+		<Institution>0001</Institution>
+	</FileHeader>
+	<ApplicationsList>
+		<Application>
+			<RegNumber>AA_XML_37_009</RegNumber>
+			<Institution>0001</Institution>
+			<OrderDprt>0101</OrderDprt>
+			<ObjectType>VolumeBasedTariff</ObjectType>
+			<ActionType>CancelFutureChanges</ActionType>
+			<ObjectFor>
+				<ContractIDT>
+					<ContractNumber>4015500182297642</ContractNumber>
+					<Client>
+						<ClientInfo>
+							<ShortName>XML_AA_37_01_short</ShortName>
+						</ClientInfo>
+					</Client>
+				</ContractIDT>
+			</ObjectFor>
+			<Data>
+				<VolumeBasedTariff>
+					<VolumeBasedServiceTariff>
+						<TariffType>
+							<TariffCode>SERV_VOL</TariffCode>
+							<TariffCodeExt>VOL_EXT</TariffCodeExt>
+						</TariffType>
+						<RefDateFrom>2015-09-01</RefDateFrom>
+					</VolumeBasedServiceTariff>
+				</VolumeBasedTariff>
+			</Data>
+		</Application>
+	</ApplicationsList>
+</ApplicationFile>

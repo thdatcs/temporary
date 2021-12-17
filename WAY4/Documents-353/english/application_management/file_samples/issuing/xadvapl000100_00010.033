@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<ApplicationFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///Q:/OW_HOMES/Cards/03_44_29_14/client/shared/pipes/xsd/OffLine/WAY4ApplFile.xsd">
+	<FileHeader>
+		<FormatVersion>2.0</FormatVersion>
+		<Sender>000100</Sender>
+		<CreationDate>2016-11-17</CreationDate>
+		<CreationTime>01:02:30</CreationTime>
+		<Number>10</Number>
+		<Institution>0001</Institution>
+	</FileHeader>
+	<ApplicationsList>
+		<Application>
+			<RegNumber>AA_XML_33_010</RegNumber>
+			<OrderDprt>0101</OrderDprt>
+			<ObjectType>Instalment</ObjectType>
+			<ActionType>EarlyRepayment</ActionType>
+			<ObjectFor>
+				<ContractIDT>
+					<ContractNumber>001-C-889430</ContractNumber>
+					<Client>
+						<ClientInfo>
+							<ShortName>TestInstAppl_short</ShortName>
+						</ClientInfo>
+					</Client>
+				</ContractIDT>
+			</ObjectFor>
+			<Data>
+				<InstalmentEarlyRepayment>
+					<InstalmentIDT>123456789</InstalmentIDT>
+					<Date>2008-12-05</Date>
+					<Amount>300</Amount>
+					<EarlyRepaymentType>Partial</EarlyRepaymentType>
+					<RecalculationMethod>KeepInstalmentAmount</RecalculationMethod>
+				</InstalmentEarlyRepayment>
+			</Data>
+		</Application>
+	</ApplicationsList>
+</ApplicationFile>

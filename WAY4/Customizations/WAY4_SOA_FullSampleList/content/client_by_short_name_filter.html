@@ -1,0 +1,233 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UFX Protocol by Example - Request for default client information. Search multiple clients by Short Name and Birth Date filtering by ClientType.</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <link rel="stylesheet" type="text/css" href="../css/mine.css" media="all">
+
+    <link href="../css/shCore.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/shThemeDefault.css" rel="stylesheet" type="text/css"/>
+
+    <script src="../js/shCore.js" type="text/javascript"></script>
+    <script src="../js/shBrushXml.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="main">
+
+        <div id="main-header">
+        <h1 id="title-heading" class="pagetitle">
+            <a href="../index.html"><img class="logo" alt="" src="../img/global.png"></a>
+            <span id="title-text"><a href="../index.html">UFX Protocol by Example</a></span>
+        </h1>
+    </div>
+
+    <div class="content">
+
+
+        <h2 class="content-heading">Request for default client information. Search multiple clients by Short Name and Birth Date filtering by ClientType.</h2>
+
+        <p>
+            
+        </p>
+
+                    <h4>Request</h4>
+
+            <p>
+                
+            </p>
+
+                <div style="border-width: 1px;" class="code panel">
+        <div class="panelContent">
+            <script type="syntaxhighlighter" class="brush: xml; gutter: false; toolbar: false">
+                <![CDATA[<UFXMsg direction="Rq" msg_type="Information" scheme="WAY4Appl" version="2.0">
+    <MsgId>AAA-555-333-EEE-23124141</MsgId>
+    <Source app="Web01"/>
+    <MsgData>
+        <Information>
+            <RegNumber>cli_multiple_short_name_001</RegNumber>
+            <ObjectType>Client</ObjectType>
+            <ActionType>Inquiry</ActionType>
+            <ResultDtls>
+                <Parm>
+                    <ParmCode>MultipleSearch</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>Client</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>FinancialInst</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+                <Filter>
+                    <Type>ObjectSearch</Type>
+                    <Code>ClientTypeFilter</Code>
+                    <Parms>ClientType=PNR;</Parms>
+                </Filter>
+            </ResultDtls>
+            <ObjectFor>
+                <ClientIDT>
+                    <ClientInfo>
+                        <ShortName>Короткое имя Марио       8912456</ShortName>
+                        <BirthDate>1972-11-13</BirthDate>
+                    </ClientInfo>
+                </ClientIDT>
+            </ObjectFor>
+        </Information>
+    </MsgData>
+</UFXMsg>
+]]>
+            </script>
+        </div>
+    </div>
+        
+        
+                                                                
+                    <h4>Response</h4>
+
+            <p>
+                
+            </p>
+
+                <div style="border-width: 1px;" class="code panel">
+        <div class="panelContent">
+            <script type="syntaxhighlighter" class="brush: xml; gutter: false; toolbar: false">
+                <![CDATA[<UFXMsg direction="Rs" msg_type="Information" resp_class="I" resp_code="0" scheme="WAY4Appl" version="2.0">
+    <MsgId>AAA-555-333-EEE-23124141</MsgId>
+    <Source app="Web01"/>
+    <MsgData>
+        <Information>
+            <RegNumber>cli_multiple_short_name_001</RegNumber>
+            <ObjectType>Client</ObjectType>
+            <ActionType>Inquiry</ActionType>
+            <ResultDtls>
+                <Parm>
+                    <ParmCode>MultipleSearch</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>Client</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>FinancialInst</ParmCode>
+                    <Value>Y</Value>
+                </Parm>
+                <Filter>
+                    <Type>ObjectSearch</Type>
+                    <Code>ClientTypeFilter</Code>
+                    <Parms>ClientType=PNR;</Parms>
+                </Filter>
+            </ResultDtls>
+            <ObjectFor>
+                <ClientIDT>
+                    <ClientInfo>
+                        <ShortName>Короткое имя Марио       8912456</ShortName>
+                        <BirthDate>1972-11-13</BirthDate>
+                    </ClientInfo>
+                </ClientIDT>
+            </ObjectFor>
+            <DataRs>
+                <ClientRs>
+                    <Client>
+                        <Institution>0001</Institution>
+                        <InstitutionIDType>Branch</InstitutionIDType>
+                        <ClientType>PNR</ClientType>
+                        <ClientInfo>
+                            <ClientNumber>Mario Brother CN 123456789123456</ClientNumber>
+                            <RegNumberType>Passport 123456789 0123456789  1</RegNumberType>
+                            <RegNumber>Mario Brother Reg Number 9123456</RegNumber>
+                            <RegNumberDetails>RN details 1_reg_details_789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234!!</RegNumberDetails>
+                            <ShortName>Короткое имя Марио       8912456</ShortName>
+                            <Title>MR</Title>
+                            <FirstName>Марио Имя 1234567893456789123456</FirstName>
+                            <LastName>Марио Фамилия 123423456789123456</LastName>
+                            <MiddleName>Марио Отчество 12345678909123456</MiddleName>
+                            <SecurityName>Секретное Имя 123456789000023456</SecurityName>
+                            <Country>GBR</Country>
+                            <Language>G</Language>
+                            <MaritalStatus>D</MaritalStatus>
+                            <Position>XML_AA_05_01_profession_12323456</Position>
+                            <CompanyName>XML_AA_05_01_company_name_89012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234!!</CompanyName>
+                            <CompanyTradeName>XML_AA_05_01_trade_name__789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234!!</CompanyTradeName>
+                            <BirthDate>1972-11-13</BirthDate>
+                            <BirthPlace>Mario birth palce 12345672323456</BirthPlace>
+                            <BirthName>Mario birth name 123456712323456</BirthName>
+                            <Gender>Male</Gender>
+                        </ClientInfo>
+                        <PlasticInfo>
+                            <FirstName>MARIO</FirstName>
+                            <LastName>CHEZARO</LastName>
+                        </PlasticInfo>
+                        <PhoneList>
+                            <Phone>
+                                <PhoneType>Work</PhoneType>
+                                <PhoneNumber>456</PhoneNumber>
+                            </Phone>
+                            <Phone>
+                                <PhoneType>Home</PhoneType>
+                                <PhoneNumber>211</PhoneNumber>
+                            </Phone>
+                            <Phone>
+                                <PhoneType>Mobile</PhoneType>
+                                <PhoneNumber>535</PhoneNumber>
+                            </Phone>
+                        </PhoneList>
+                        <DateOpen>2004-04-03</DateOpen>
+                        <BaseAddress>
+                            <EMail>XML_AA_05_01_email_123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234!!</EMail>
+                            <City>XML_AA_05_01_city_12345689123456</City>
+                            <PostalCode>00334</PostalCode>
+                            <AddressLine1>XML_AA_05_01_address_line_1_012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234!!</AddressLine1>
+                            <AddressLine2>XML_AA_05_01_address_line_2_012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234!!</AddressLine2>
+                            <AddressLine3>XML_AA_05_01_address_line_3_012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234!!</AddressLine3>
+                            <AddressLine4>XML_AA_05_01_address_line_4_012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234!!</AddressLine4>
+                        </BaseAddress>
+                        <AddInfo>
+                            <AddInfo01>1_3456789_12345678_12345678_12345678_12345678_12345678_12345678_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_1234567890</AddInfo01>
+                            <AddInfo02>AG</AddInfo02>
+                            <AddInfo03>3_3456789_12345678_12345678_12345678_12345678_12345678_12345678_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_1234567890</AddInfo03>
+                            <AddInfo04>4_3456789_12345678_12345678_12345678_12345678_12345678_12345678_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_123456789_1234567890</AddInfo04>
+                            <AddDate01>1981-08-13 12:13:14</AddDate01>
+                            <AddDate02>1981-08-13 00:00:00</AddDate02>
+                        </AddInfo>
+                    </Client>
+                    <Info/>
+                </ClientRs>
+            </DataRs>
+            <Status>
+                <RespClass>Information</RespClass>
+                <RespCode>0</RespCode>
+                <RespText>Successfully processed</RespText>
+            </Status>
+        </Information>
+    </MsgData>
+</UFXMsg>
+]]>
+            </script>
+        </div>
+    </div>
+        
+
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    SyntaxHighlighter.all();
+</script>
+
+</body>
+</html>

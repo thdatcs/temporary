@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationFile>
+    <FileHeader>
+        <FormatVersion>2.0</FormatVersion>
+        <Sender>0001</Sender>
+        <CreationDate>2012-02-22</CreationDate>
+        <CreationTime>01:02:30</CreationTime>
+        <Number>06</Number>
+        <Institution>0001</Institution>
+    </FileHeader>
+    <ApplicationsList>
+        <Application>
+            <RegNumber>AA_XML_06_001</RegNumber>
+            <OrderDprt>0101</OrderDprt>
+            <ObjectType>Contract</ObjectType>
+            <ActionType>Add</ActionType>
+            <ObjectFor>
+                <ClientIDT>
+                    <ClientInfo>
+                        <ClientNumber>XML_AA_01_acq_num</ClientNumber>
+                        <ShortName>XML_AA_01_acq_short</ShortName>
+                    </ClientInfo>
+                </ClientIDT>
+            </ObjectFor>
+            <Data>
+                <Contract>
+                    <ContractIDT>
+                        <ContractNumber>XML_AA_ATM_RET</ContractNumber>
+                    </ContractIDT>
+                    <CommentText>ATM RETAIL</CommentText>
+                    <Product>
+                        <ProductCode1>XML_ACQ</ProductCode1>
+                    </Product>
+                    <DateOpen>2012-01-22</DateOpen>
+                </Contract>
+            </Data>
+            <SubApplList>
+                <Application>
+                    <RegNumber>AA_XML_06_001_01</RegNumber>
+                    <OrderDprt>0001</OrderDprt>
+                    <ObjectType>Contract</ObjectType>
+                    <ActionType>Add</ActionType>
+                    <Data>
+                        <Contract>
+                            <ContractIDT>
+                                <ContractNumber>11100003</ContractNumber>
+                                <Relation>AR</Relation>
+                            </ContractIDT>
+                            <ContractName>Test ATM Relation</ContractName>
+                            <CommentText>CommentText</CommentText>
+                            <Product>
+                                <ProductCode1>XML_ATM_RETAIL</ProductCode1>
+                            </Product>
+                            <DeviceInfo>
+                                <SIC>6011</SIC>
+                                <MerchantID>CardAcceptorID2</MerchantID>
+                            </DeviceInfo>
+                        </Contract>
+                    </Data>
+                    <SubApplList>
+                        <Application>
+                            <RegNumber>AA_XML_01_006_01_01</RegNumber>
+                            <ObjectType>ContractAddress</ObjectType>
+                            <ActionType>Add</ActionType>
+                            <Data>
+                                <Address>
+                                    <AddressType>OWS_PS</AddressType>
+                                    <Country>RUS</Country>
+                                    <City>Merchant City</City>
+                                    <PostalCode>ZipCode</PostalCode>
+                                    <AddressLine1>Merchant Name</AddressLine1>
+                                    <AddressLine2>Location</AddressLine2>
+                                </Address>
+                            </Data>
+                        </Application>
+                    </SubApplList>
+                </Application>
+            </SubApplList>
+        </Application>
+    </ApplicationsList>
+</ApplicationFile>

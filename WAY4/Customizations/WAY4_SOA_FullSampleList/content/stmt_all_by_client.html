@@ -1,0 +1,291 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UFX Protocol by Example - Statement: all operations by client</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <link rel="stylesheet" type="text/css" href="../css/mine.css" media="all">
+
+    <link href="../css/shCore.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/shThemeDefault.css" rel="stylesheet" type="text/css"/>
+
+    <script src="../js/shCore.js" type="text/javascript"></script>
+    <script src="../js/shBrushXml.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="main">
+
+        <div id="main-header">
+        <h1 id="title-heading" class="pagetitle">
+            <a href="../index.html"><img class="logo" alt="" src="../img/global.png"></a>
+            <span id="title-text"><a href="../index.html">UFX Protocol by Example</a></span>
+        </h1>
+    </div>
+
+    <div class="content">
+
+
+        <h2 class="content-heading">Statement: all operations by client</h2>
+
+        <p>
+            Pay attention to Requestor element: it identifies client instead of contract.
+
+To get all client operations we first need to find client contracts. This process
+is controlled by filter with type "ContractList". It supports two special parameters:
+* OtherClientSubs (whether to include sub-contracts belonging to other clients)
+* ContractStatus (comma-separated list of contract statuses to include)
+
+Default behavior is not to show sub-contracts belonging to other clients and
+to include all contracts regardless of their status.
+
+Authorization can not be performed with this kind of statement, because we work
+with a set of contracts instead of one. Thus "SkipAuth" TransRule must be specified in request.
+        </p>
+
+                    <h4>Request</h4>
+
+            <p>
+                
+            </p>
+
+                <div style="border-width: 1px;" class="code panel">
+        <div class="panelContent">
+            <script type="syntaxhighlighter" class="brush: xml; gutter: false; toolbar: false">
+                <![CDATA[<UFXMsg direction="Rq" msg_type="Doc" scheme="WAY4Doc" version="2.0">
+    <MsgId>AAA-555-333-EEE-23124141</MsgId>
+    <Source app="IVR01"/>
+    <MsgData>
+        <Doc>
+            <TransType>
+                <TransCode>
+                    <MsgCode>01000S</MsgCode>
+                </TransCode>
+                <TransRules>
+                    <TransRule>
+                        <ParmCode>SkipAuth</ParmCode>
+                        <Value>Y</Value>
+                    </TransRule>
+                </TransRules>
+            </TransType>
+            <DocRefSet>
+                <Parm>
+                    <ParmCode>RRN</ParmCode>
+                    <Value>449999111001</Value>
+                </Parm>
+            </DocRefSet>
+            <Requestor>
+                <Client>
+                    <RefContractNumber>6799990184487936</RefContractNumber>
+                </Client>
+            </Requestor>
+            <Source>
+                <ContractNumber>99999999</ContractNumber>
+                <MemberId>0001</MemberId>
+            </Source>
+            <ResultDtls>
+                <Parm>
+                    <ParmCode>StmtType</ParmCode>
+                    <Value>Additional</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>StmtContType</ParmCode>
+                    <Value>All</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>DateFrom</ParmCode>
+                    <Value>2001-08-23</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>DateTo</ParmCode>
+                    <Value>2009-08-25</Value>
+                </Parm>
+                <Filter>
+                    <Type>ContractList</Type>
+                    <Code>StmtContracts</Code>
+                    <Parms>OtherClientSubs=Y;ContractStatus=00;</Parms>
+                </Filter>
+            </ResultDtls>
+        </Doc>
+    </MsgData>
+</UFXMsg>
+]]>
+            </script>
+        </div>
+    </div>
+        
+        
+                                                                
+                    <h4>Response</h4>
+
+            <p>
+                
+            </p>
+
+                <div style="border-width: 1px;" class="code panel">
+        <div class="panelContent">
+            <script type="syntaxhighlighter" class="brush: xml; gutter: false; toolbar: false">
+                <![CDATA[<UFXMsg direction="Rs" msg_type="Doc" resp_class="I" resp_code="0" scheme="WAY4Doc" version="2.0">
+    <MsgId>AAA-555-333-EEE-23124141</MsgId>
+    <Source app="IVR01"/>
+    <MsgData>
+        <Doc>
+            <TransType>
+                <TransCode>
+                    <MsgCode>01000S</MsgCode>
+                </TransCode>
+                <TransRules>
+                    <TransRule>
+                        <ParmCode>SkipAuth</ParmCode>
+                        <Value>Y</Value>
+                    </TransRule>
+                </TransRules>
+            </TransType>
+            <DocRefSet>
+                <Parm>
+                    <ParmCode>RRN</ParmCode>
+                    <Value>449999111001</Value>
+                </Parm>
+            </DocRefSet>
+            <Requestor>
+                <Client>
+                    <RefContractNumber>6799990184487936</RefContractNumber>
+                </Client>
+            </Requestor>
+            <Source>
+                <ContractNumber>99999999</ContractNumber>
+                <MemberId>0001</MemberId>
+            </Source>
+            <ResultDtls>
+                <Parm>
+                    <ParmCode>StmtType</ParmCode>
+                    <Value>Additional</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>StmtContType</ParmCode>
+                    <Value>All</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>DateFrom</ParmCode>
+                    <Value>2001-08-23</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>DateTo</ParmCode>
+                    <Value>2009-08-25</Value>
+                </Parm>
+                <Filter>
+                    <Type>ContractList</Type>
+                    <Code>StmtContracts</Code>
+                    <Parms>OtherClientSubs=Y;ContractStatus=00;</Parms>
+                </Filter>
+            </ResultDtls>
+            <DataRs>
+                <Stmt>
+                    <AdditionalStmt>
+                        <StmtItem>
+                            <PostingDetails>
+                                <AccountAmount>
+                                    <Type>Blocked</Type>
+                                    <Currency>RUR</Currency>
+                                    <Amount>1.01</Amount>
+                                </AccountAmount>
+                                <ProcessingStatus>Active</ProcessingStatus>
+                                <Status>
+                                    <RespClass>Information</RespClass>
+                                    <RespCode>0</RespCode>
+                                    <RespText>Successfully completed</RespText>
+                                    <PostingStatus>Posted</PostingStatus>
+                                </Status>
+                            </PostingDetails>
+                            <DocData>
+                                <TransType>
+                                    <TransCode>
+                                        <MsgCode>01000R</MsgCode>
+                                        <FinCategory>Y</FinCategory>
+                                        <RequestCategory>Q</RequestCategory>
+                                        <ServiceClass>T</ServiceClass>
+                                        <TransTypeCode>R1</TransTypeCode>
+                                        <TransTypeId>5</TransTypeId>
+                                    </TransCode>
+                                    <TransCondition>POS Card Read</TransCondition>
+                                </TransType>
+                                <DocRefSet>
+                                    <Parm>
+                                        <ParmCode>RRN</ParmCode>
+                                        <Value>212501245061</Value>
+                                    </Parm>
+                                    <Parm>
+                                        <ParmCode>SRN</ParmCode>
+                                        <Value>212501245061</Value>
+                                    </Parm>
+                                    <Parm>
+                                        <ParmCode>AuthCode</ParmCode>
+                                        <Value>501638</Value>
+                                    </Parm>
+                                </DocRefSet>
+                                <LocalDt>2012-05-04 18:29:23</LocalDt>
+                                <Description>Retail RUS ST.PETERSBURG TEST OWS</Description>
+                                <DescriptionExt>TEST OWS</DescriptionExt>
+                                <SourceDtls>
+                                    <SIC>5999</SIC>
+                                    <Country>RUS</Country>
+                                    <City>ST.PETERSBURG</City>
+                                </SourceDtls>
+                                <ContractFor>
+                                    <ContractNumber>6799990184487936</ContractNumber>
+                                </ContractFor>
+                                <Originator>
+                                    <ContractNumber>99999999</ContractNumber>
+                                    <MemberId>0001</MemberId>
+                                </Originator>
+                                <Destination>
+                                    <ContractNumber>6799990184487936</ContractNumber>
+                                    <Relation>00</Relation>
+                                </Destination>
+                                <Transaction>
+                                    <Currency>RUR</Currency>
+                                    <Amount>1</Amount>
+                                </Transaction>
+                                <Billing>
+                                    <PhaseDate>2011-07-01</PhaseDate>
+                                    <Currency>RUR</Currency>
+                                    <Amount>1</Amount>
+                                </Billing>
+                            </DocData>
+                        </StmtItem>
+                    </AdditionalStmt>
+                </Stmt>
+            </DataRs>
+            <Status>
+                <RespClass>Information</RespClass>
+                <RespCode>0</RespCode>
+                <RespText>Successfully processed</RespText>
+            </Status>
+        </Doc>
+    </MsgData>
+</UFXMsg>
+]]>
+            </script>
+        </div>
+    </div>
+        
+
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    SyntaxHighlighter.all();
+</script>
+
+</body>
+</html>

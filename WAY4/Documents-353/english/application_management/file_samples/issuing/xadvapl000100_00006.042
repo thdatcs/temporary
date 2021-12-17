@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<ApplicationFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///Q:/OW_HOMES/Cards/03_53_19_13/client/shared/pipes/xsd/OffLine/WAY4ApplFile.xsd">
+	<FileHeader>
+		<FormatVersion>2.0</FormatVersion>
+		<Sender>000100</Sender>
+		<CreationDate>2021-04-15</CreationDate>
+		<CreationTime>01:02:30</CreationTime>
+		<Number>06</Number>
+		<Institution>0001</Institution>
+	</FileHeader>
+	<ApplicationsList>
+		<Application>
+			<RegNumber>AA_XML_42_006</RegNumber>
+			<OrderDprt>0101</OrderDprt>
+			<ObjectType>Fee</ObjectType>
+			<ActionType>Charge</ActionType>
+			<ObjectFor>
+				<ContractIDT>
+					<ContractNumber>4015500172867453</ContractNumber>
+					<Client>
+						<ClientInfo>
+							<ShortName>XML_AA_42_03_short</ShortName>
+						</ClientInfo>
+					</Client>
+				</ContractIDT>
+			</ObjectFor>
+			<Data>
+				<Fees>
+					<Fee>
+						<MessageCode>balfee1</MessageCode>
+						<TransTypeExt>balfee</TransTypeExt>
+						<Amount>100</Amount>
+						<Currency>RUR</Currency>
+						<Comment>Test Comment1</Comment>
+					</Fee>
+					<Fee>
+						<MessageCode>onlinestmt</MessageCode>
+						<TransTypeExt>onstmt</TransTypeExt>
+						<Amount>300</Amount>
+						<Currency>RUR</Currency>
+						<Comment>Test Comment2</Comment>
+					</Fee>
+				</Fees>
+			</Data>
+		</Application>
+	</ApplicationsList>
+</ApplicationFile>

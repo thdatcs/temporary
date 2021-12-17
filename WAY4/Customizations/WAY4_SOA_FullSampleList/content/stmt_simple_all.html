@@ -1,0 +1,637 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UFX Protocol by Example - Full additional statement for card with optional expiry date and sequence number check</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <link rel="stylesheet" type="text/css" href="../css/mine.css" media="all">
+
+    <link href="../css/shCore.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/shThemeDefault.css" rel="stylesheet" type="text/css"/>
+
+    <script src="../js/shCore.js" type="text/javascript"></script>
+    <script src="../js/shBrushXml.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="main">
+
+        <div id="main-header">
+        <h1 id="title-heading" class="pagetitle">
+            <a href="../index.html"><img class="logo" alt="" src="../img/global.png"></a>
+            <span id="title-text"><a href="../index.html">UFX Protocol by Example</a></span>
+        </h1>
+    </div>
+
+    <div class="content">
+
+
+        <h2 class="content-heading">Full additional statement for card with optional expiry date and sequence number check</h2>
+
+        <p>
+            
+        </p>
+
+                    <h4>Request</h4>
+
+            <p>
+                
+            </p>
+
+                <div style="border-width: 1px;" class="code panel">
+        <div class="panelContent">
+            <script type="syntaxhighlighter" class="brush: xml; gutter: false; toolbar: false">
+                <![CDATA[<UFXMsg direction="Rq" msg_type="Doc" scheme="WAY4Doc" version="2.0">
+    <MsgId>AAA-555-333-EEE-23124141</MsgId>
+    <Source app="IVR01"/>
+    <MsgData>
+        <Doc>
+            <TransType>
+                <TransCode>
+                    <MsgCode>01000S</MsgCode>
+                </TransCode>
+            </TransType>
+            <DocRefSet>
+                <Parm>
+                    <ParmCode>RRN</ParmCode>
+                    <Value>445599111001</Value>
+                </Parm>
+            </DocRefSet>
+            <Requestor>
+                <ContractNumber>4015500175184773</ContractNumber>
+                <CardInfo>
+                    <CardExpiry>1011</CardExpiry>
+                    <CardSeqN>1</CardSeqN>
+                </CardInfo>
+            </Requestor>
+            <Source>
+                <ContractNumber>99999999</ContractNumber>
+                <MemberId>0001</MemberId>
+            </Source>
+            <ResultDtls>
+                <Parm>
+                    <ParmCode>StmtType</ParmCode>
+                    <Value>Additional</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>StmtContType</ParmCode>
+                    <Value>All</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>DateFrom</ParmCode>
+                    <Value>2001-08-23</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>DateTo</ParmCode>
+                    <Value>2009-08-25</Value>
+                </Parm>
+            </ResultDtls>
+        </Doc>
+    </MsgData>
+</UFXMsg>
+]]>
+            </script>
+        </div>
+    </div>
+        
+        
+                                                                
+                    <h4>Response</h4>
+
+            <p>
+                
+            </p>
+
+                <div style="border-width: 1px;" class="code panel">
+        <div class="panelContent">
+            <script type="syntaxhighlighter" class="brush: xml; gutter: false; toolbar: false">
+                <![CDATA[<UFXMsg direction="Rs" msg_type="Doc" resp_class="I" resp_code="0" scheme="WAY4Doc" version="2.0">
+    <MsgId>AAA-555-333-EEE-23124141</MsgId>
+    <Source app="IVR01"/>
+    <MsgData>
+        <Doc>
+            <TransType>
+                <TransCode>
+                    <MsgCode>01000S</MsgCode>
+                </TransCode>
+            </TransType>
+            <DocRefSet>
+                <Parm>
+                    <ParmCode>RRN</ParmCode>
+                    <Value>445599111001</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>AuthCode</ParmCode>
+                    <Value>123456</Value>
+                </Parm>
+            </DocRefSet>
+            <Requestor>
+                <ContractNumber>4015500175184773</ContractNumber>
+                <CardInfo>
+                    <CardExpiry>1011</CardExpiry>
+                    <CardSeqN>1</CardSeqN>
+                </CardInfo>
+            </Requestor>
+            <Source>
+                <ContractNumber>99999999</ContractNumber>
+                <MemberId>0001</MemberId>
+            </Source>
+            <ResultDtls>
+                <Parm>
+                    <ParmCode>StmtType</ParmCode>
+                    <Value>Additional</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>StmtContType</ParmCode>
+                    <Value>All</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>DateFrom</ParmCode>
+                    <Value>2001-08-23</Value>
+                </Parm>
+                <Parm>
+                    <ParmCode>DateTo</ParmCode>
+                    <Value>2009-08-25</Value>
+                </Parm>
+            </ResultDtls>
+            <DataRs>
+                <Stmt>
+                    <AdditionalStmt>
+                        <BeginBalance>
+                            <Balance>
+                                <Amount>-387.20</Amount>
+                                <Currency>RUR</Currency>
+                            </Balance>
+                        </BeginBalance>
+                        <StmtItem>
+                            <PostingDetails>
+                                <AccountAmount>
+                                    <Type>Full</Type>
+                                    <Currency>RUR</Currency>
+                                    <Amount>-20.99</Amount>
+                                </AccountAmount>
+                                <ProcessingStatus>Posted</ProcessingStatus>
+                                <Status>
+                                    <RespClass>Information</RespClass>
+                                    <RespCode>0</RespCode>
+                                    <RespText>Successfully completed</RespText>
+                                    <PostingStatus>Posted</PostingStatus>
+                                </Status>
+                            </PostingDetails>
+                            <DocData>
+                                <TransType>
+                                    <TransCode>
+                                        <FinCategory>N</FinCategory>
+                                        <RequestCategory>P</RequestCategory>
+                                        <ServiceClass>T</ServiceClass>
+                                        <TransTypeCode>R1</TransTypeCode>
+                                    </TransCode>
+                                    <TransCondition> POS PBT</TransCondition>
+                                </TransType>
+                                <DocRefSet>
+                                    <Parm>
+                                        <ParmCode>RRN</ParmCode>
+                                        <Value>552299888003</Value>
+                                    </Parm>
+                                    <Parm>
+                                        <ParmCode>SRN</ParmCode>
+                                        <Value>442299111003</Value>
+                                    </Parm>
+                                    <Parm>
+                                        <ParmCode>AuthCode</ParmCode>
+                                        <Value>
+                                            123456
+                                        </Value>
+                                    </Parm>
+                                </DocRefSet>
+                                <LocalDt>2007-11-15 19:18:26</LocalDt>
+                                <Description>Retail RUS ST.PETERSBURG</Description>
+                                <SourceDtls>
+                                    <SIC>3390</SIC>
+                                    <Country>RUS</Country>
+                                    <City>ST.PETERSBURG</City>
+                                </SourceDtls>
+                                <ContractFor>
+                                    <ContractNumber>4015500175184773</ContractNumber>
+                                </ContractFor>
+                                <Originator>
+                                    <ContractNumber>99999999</ContractNumber>
+                                </Originator>
+                                <Destination>
+                                    <ContractNumber>4015500175184773</ContractNumber>
+                                </Destination>
+                                <Transaction>
+                                    <Currency>RUR</Currency>
+                                    <Amount>20.99</Amount>
+                                </Transaction>
+                                <Billing>
+                                    <PhaseDate>2007-12-03</PhaseDate>
+                                    <Currency>RUR</Currency>
+                                    <Amount>20.99</Amount>
+                                </Billing>
+                            </DocData>
+                        </StmtItem>
+                        <StmtItem>
+                            <PostingDetails>
+                                <AccountAmount>
+                                    <Type>Full</Type>
+                                    <Currency>RUR</Currency>
+                                    <Amount>-20.99</Amount>
+                                </AccountAmount>
+                                <ProcessingStatus>Posted</ProcessingStatus>
+                                <Status>
+                                    <RespClass>Information</RespClass>
+                                    <RespCode>0</RespCode>
+                                    <RespText>Successfully completed</RespText>
+                                    <PostingStatus>Posted</PostingStatus>
+                                </Status>
+                            </PostingDetails>
+                            <DocData>
+                                <TransType>
+                                    <TransCode>
+                                        <FinCategory>N</FinCategory>
+                                        <RequestCategory>P</RequestCategory>
+                                        <ServiceClass>T</ServiceClass>
+                                        <TransTypeCode>R1</TransTypeCode>
+                                    </TransCode>
+                                    <TransCondition> POS PBT</TransCondition>
+                                </TransType>
+                                <DocRefSet>
+                                    <Parm>
+                                        <ParmCode>RRN</ParmCode>
+                                        <Value>552299888002</Value>
+                                    </Parm>
+                                    <Parm>
+                                        <ParmCode>SRN</ParmCode>
+                                        <Value>442299111002</Value>
+                                    </Parm>
+                                    <Parm>
+                                        <ParmCode>AuthCode</ParmCode>
+                                        <Value>
+                                            123456
+                                        </Value>
+                                    </Parm>
+                                </DocRefSet>
+                                <LocalDt>2007-11-15 19:18:26</LocalDt>
+                                <Description>Retail RUS ST.PETERSBURG</Description>
+                                <SourceDtls>
+                                    <SIC>3390</SIC>
+                                    <Country>RUS</Country>
+                                    <City>ST.PETERSBURG</City>
+                                </SourceDtls>
+                                <ContractFor>
+                                    <ContractNumber>4015500175184773</ContractNumber>
+                                </ContractFor>
+                                <Originator>
+                                    <ContractNumber>99999999</ContractNumber>
+                                </Originator>
+                                <Destination>
+                                    <ContractNumber>4015500175184773</ContractNumber>
+                                </Destination>
+                                <Transaction>
+                                    <Currency>RUR</Currency>
+                                    <Amount>20.99</Amount>
+                                </Transaction>
+                                <Billing>
+                                    <PhaseDate>2007-12-03</PhaseDate>
+                                    <Currency>RUR</Currency>
+                                    <Amount>20.99</Amount>
+                                </Billing>
+                            </DocData>
+                        </StmtItem>
+                        <StmtItem>
+                            <PostingDetails>
+                                <AccountAmount>
+                                    <Type>Full</Type>
+                                    <Currency>RUR</Currency>
+                                    <Amount>-10.11</Amount>
+                                </AccountAmount>
+                                <ProcessingStatus>Posted</ProcessingStatus>
+                                <Status>
+                                    <RespClass>Information</RespClass>
+                                    <RespCode>0</RespCode>
+                                    <RespText>Successfully completed</RespText>
+                                    <PostingStatus>Posted</PostingStatus>
+                                </Status>
+                            </PostingDetails>
+                            <DocData>
+                                <TransType>
+                                    <TransCode>
+                                        <FinCategory>N</FinCategory>
+                                        <RequestCategory>P</RequestCategory>
+                                        <ServiceClass>T</ServiceClass>
+                                        <TransTypeCode>KA</TransTypeCode>
+                                    </TransCode>
+                                </TransType>
+                                <DocRefSet>
+                                    <Parm>
+                                        <ParmCode>RRN</ParmCode>
+                                        <Value>557799888003</Value>
+                                    </Parm>
+                                    <Parm>
+                                        <ParmCode>SRN</ParmCode>
+                                        <Value>447799111003</Value>
+                                    </Parm>
+                                    <Parm>
+                                        <ParmCode>AuthCode</ParmCode>
+                                        <Value>
+                                            123456
+                                        </Value>
+                                    </Parm>
+                                </DocRefSet>
+                                <LocalDt>2007-11-15 19:18:26</LocalDt>
+                                <Description>Credit Account   CNFG.TARG_ACC_TYPE=Incoming Active;</Description>
+                                <SourceDtls/>
+                                <ContractFor>
+                                    <ContractNumber>4015500175184773</ContractNumber>
+                                </ContractFor>
+                                <Originator>
+                                    <ContractNumber>4015500175184773</ContractNumber>
+                                </Originator>
+                                <Destination>
+                                    <ContractNumber>UtilityPaymentReceiver</ContractNumber>
+                                </Destination>
+                                <Transaction>
+                                    <Currency>RUR</Currency>
+                                    <Amount>10.11</Amount>
+                                </Transaction>
+                                <Billing>
+                                    <PhaseDate>2007-12-03</PhaseDate>
+                                    <Currency>RUR</Currency>
+                                    <Amount>10.11</Amount>
+                                </Billing>
+                            </DocData>
+                        </StmtItem>
+                        <StmtItem>
+                            <PostingDetails>
+                                <AccountAmount>
+                                    <Type>Full</Type>
+                                    <Currency>RUR</Currency>
+                                    <Amount>-55.11</Amount>
+                                </AccountAmount>
+                                <ProcessingStatus>Posted</ProcessingStatus>
+                                <Status>
+                                    <RespClass>Information</RespClass>
+                                    <RespCode>0</RespCode>
+                                    <RespText>Successfully completed</RespText>
+                                    <PostingStatus>Posted</PostingStatus>
+                                </Status>
+                            </PostingDetails>
+                            <DocData>
+                                <TransType>
+                                    <TransCode>
+                                        <FinCategory>N</FinCategory>
+                                        <RequestCategory>P</RequestCategory>
+                                        <ServiceClass>T</ServiceClass>
+                                        <TransTypeCode>WU</TransTypeCode>
+                                    </TransCode>
+                                </TransType>
+                                <DocRefSet>
+                                    <Parm>
+                                        <ParmCode>RRN</ParmCode>
+                                        <Value>557799888005</Value>
+                                    </Parm>
+                                    <Parm>
+                                        <ParmCode>SRN</ParmCode>
+                                        <Value>447799111005</Value>
+                                    </Parm>
+                                    <Parm>
+                                        <ParmCode>AuthCode</ParmCode>
+                                        <Value>
+                                            123456
+                                        </Value>
+                                    </Parm>
+                                </DocRefSet>
+                                <LocalDt>2007-11-15 19:18:26</LocalDt>
+                                <Description>Way4U   WAY4U Transfer</Description>
+                                <SourceDtls/>
+                                <ContractFor>
+                                    <ContractNumber>4015500175184773</ContractNumber>
+                                </ContractFor>
+                                <Originator>
+                                    <ContractNumber>4015500175184773</ContractNumber>
+                                </Originator>
+                                <Destination>
+                                    <ContractNumber>4015500166540397</ContractNumber>
+                                </Destination>
+                                <Transaction>
+                                    <Currency>RUR</Currency>
+                                    <Amount>55.11</Amount>
+                                </Transaction>
+                                <Billing>
+                                    <PhaseDate>2007-12-03</PhaseDate>
+                                    <Currency>RUR</Currency>
+                                    <Amount>55.11</Amount>
+                                </Billing>
+                            </DocData>
+                        </StmtItem>
+                        <StmtItem>
+                            <PostingDetails>
+                                <ProcessingStatus>Posted</ProcessingStatus>
+                                <Status>
+                                    <RespClass>Information</RespClass>
+                                    <RespCode>0</RespCode>
+                                    <RespText>Successfully completed</RespText>
+                                    <PostingStatus>Posted</PostingStatus>
+                                </Status>
+                            </PostingDetails>
+                            <DocData>
+                                <TransType>
+                                    <TransCode>
+                                        <FinCategory>N</FinCategory>
+                                        <RequestCategory>P</RequestCategory>
+                                        <ServiceClass>M</ServiceClass>
+                                        <TransTypeCode>MD</TransTypeCode>
+                                    </TransCode>
+                                </TransType>
+                                <LocalDt>2007-12-03 00:00:00</LocalDt>
+                                <Description>Card Production</Description>
+                                <SourceDtls/>
+                                <ContractFor>
+                                    <ContractNumber>4015500175184773</ContractNumber>
+                                </ContractFor>
+                                <Destination>
+                                    <ContractNumber>4015500175184773</ContractNumber>
+                                </Destination>
+                                <Billing>
+                                    <PhaseDate>2007-12-03</PhaseDate>
+                                    <Extra>
+                                        <Type>Fee</Type>
+                                        <Currency>RUR</Currency>
+                                        <Amount>-280</Amount>
+                                    </Extra>
+                                </Billing>
+                            </DocData>
+                        </StmtItem>
+                        <StmtItem>
+                            <PostingDetails>
+                                <AccountAmount>
+                                    <Type>Blocked</Type>
+                                    <Currency>RUR</Currency>
+                                    <Amount>18.11</Amount>
+                                </AccountAmount>
+                                <ProcessingStatus>Active</ProcessingStatus>
+                                <Status>
+                                    <RespClass>Information</RespClass>
+                                    <RespCode>0</RespCode>
+                                    <RespText>Successfully completed</RespText>
+                                    <PostingStatus>Posted</PostingStatus>
+                                </Status>
+                            </PostingDetails>
+                            <DocData>
+                                <TransType>
+                                    <TransCode>
+                                        <MsgCode>01000R</MsgCode>
+                                        <FinCategory>Y</FinCategory>
+                                        <RequestCategory>Q</RequestCategory>
+                                        <ServiceClass>T</ServiceClass>
+                                        <TransTypeCode>R1</TransTypeCode>
+                                    </TransCode>
+                                    <TransCondition> POS PBT</TransCondition>
+                                </TransType>
+                                <DocRefSet>
+                                    <Parm>
+                                        <ParmCode>RRN</ParmCode>
+                                        <Value>556599666666</Value>
+                                    </Parm>
+                                    <Parm>
+                                        <ParmCode>SRN</ParmCode>
+                                        <Value>446599111118</Value>
+                                    </Parm>
+                                    <Parm>
+                                        <ParmCode>AuthCode</ParmCode>
+                                        <Value>
+                                            123456
+                                        </Value>
+                                    </Parm>
+                                </DocRefSet>
+                                <LocalDt>2008-05-15 19:18:26</LocalDt>
+                                <SourceDtls>
+                                    <SIC>3390</SIC>
+                                    <Country>RUS</Country>
+                                    <City>ST.PETERSBURG</City>
+                                </SourceDtls>
+                                <ContractFor>
+                                    <ContractNumber>4015500175184773</ContractNumber>
+                                </ContractFor>
+                                <Originator>
+                                    <ContractNumber>99999999</ContractNumber>
+                                </Originator>
+                                <Destination>
+                                    <ContractNumber>4015500175184773</ContractNumber>
+                                </Destination>
+                                <Transaction>
+                                    <Currency>RUR</Currency>
+                                    <Amount>18.11</Amount>
+                                </Transaction>
+                                <Billing>
+                                    <PhaseDate>2007-12-03</PhaseDate>
+                                    <Currency>RUR</Currency>
+                                    <Amount>18.11</Amount>
+                                </Billing>
+                            </DocData>
+                        </StmtItem>
+                        <StmtItem>
+                            <PostingDetails>
+                                <AccountAmount>
+                                    <Type>Blocked</Type>
+                                    <Currency>RUR</Currency>
+                                    <Amount>24.99</Amount>
+                                </AccountAmount>
+                                <ProcessingStatus>Active</ProcessingStatus>
+                                <Status>
+                                    <RespClass>Information</RespClass>
+                                    <RespCode>0</RespCode>
+                                    <RespText>Successfully completed</RespText>
+                                    <PostingStatus>Posted</PostingStatus>
+                                </Status>
+                            </PostingDetails>
+                            <DocData>
+                                <TransType>
+                                    <TransCode>
+                                        <MsgCode>01000R</MsgCode>
+                                        <FinCategory>Y</FinCategory>
+                                        <RequestCategory>Q</RequestCategory>
+                                        <ServiceClass>T</ServiceClass>
+                                        <TransTypeCode>R1</TransTypeCode>
+                                    </TransCode>
+                                    <TransCondition> POS PBT</TransCondition>
+                                </TransType>
+                                <DocRefSet>
+                                    <Parm>
+                                        <ParmCode>RRN</ParmCode>
+                                        <Value>556501000001</Value>
+                                    </Parm>
+                                    <Parm>
+                                        <ParmCode>SRN</ParmCode>
+                                        <Value>446599111124</Value>
+                                    </Parm>
+                                    <Parm>
+                                        <ParmCode>AuthCode</ParmCode>
+                                        <Value>
+                                            123456
+                                        </Value>
+                                    </Parm>
+                                </DocRefSet>
+                                <LocalDt>2008-05-15 19:18:26</LocalDt>
+                                <SourceDtls>
+                                    <SIC>3390</SIC>
+                                    <Country>RUS</Country>
+                                    <City>ST.PETERSBURG</City>
+                                </SourceDtls>
+                                <ContractFor>
+                                    <ContractNumber>4015500175184773</ContractNumber>
+                                </ContractFor>
+                                <Originator>
+                                    <ContractNumber>99999999</ContractNumber>
+                                </Originator>
+                                <Destination>
+                                    <ContractNumber>4015500175184773</ContractNumber>
+                                </Destination>
+                                <Transaction>
+                                    <Currency>RUR</Currency>
+                                    <Amount>24.99</Amount>
+                                </Transaction>
+                                <Billing>
+                                    <PhaseDate>2007-12-03</PhaseDate>
+                                    <Currency>RUR</Currency>
+                                    <Amount>24.99</Amount>
+                                </Billing>
+                            </DocData>
+                        </StmtItem>
+                    </AdditionalStmt>
+                </Stmt>
+            </DataRs>
+            <Status>
+                <RespClass>Information</RespClass>
+                <RespCode>0</RespCode>
+                <RespText>Successfully processed</RespText>
+            </Status>
+        </Doc>
+    </MsgData>
+</UFXMsg>
+]]>
+            </script>
+        </div>
+    </div>
+        
+
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    SyntaxHighlighter.all();
+</script>
+
+</body>
+</html>
