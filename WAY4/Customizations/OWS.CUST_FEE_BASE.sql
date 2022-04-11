@@ -8,6 +8,9 @@ create or replace function ows.CUST_FEE_BASE(ContractID  in dtype. RecordID %Typ
   return dtypt. Money %Type IS
   p_check_dlq_level     NUMBER;
   p_check_merchant_name NUMBER;
+  TargetAmnt dtypt.Money       %Type;
+  TransCode  dtypt.TransCode   %Type;
+
 begin
   ows.stnd.PROCESS_MESSAGE('I', 'Cust Fee Base ' || ContractID);
   IF AccCurr = '001' THEN
@@ -50,5 +53,32 @@ begin
   
     RETURN CurrMtr.Local_Amount;
   END IF;
+  
+  
+  --Begin Merchant Monthly Fee--
+  TargetAmnt := 0;
+  stnd.process_message (stnd.trace, 'Entering CUST_FEE_BASE');
+  stnd.process_message (stnd.trace, 'ContractID: '||ContractID||',SettlAmount: '||SettlAmount||', ServiceID: '||ServiceID);
+  
+  select t.trans_code into TransCode
+  from trans_subtype st, trans_type t
+  where st.trans_type__oid = t.id
+  and st.id = CurrMtr.Trans_Subtype;
+  ows.stnd.PROCESS_MESSAGE('I', 'TransCode: ' || TransCode);
+  
+  IF TransCode = 'MMF'
+   then 
+    select hy.balance into TargetAmnt
+    from ACNT_BALANCE_HISTORY hy
+    where hy.id = (select max(h.id) from ACNT_BALANCE_HISTORY h
+                                    where h.acnt_contract__oid = ContractID
+                                    and h.balance_type = (select min(b.id) from balance_type b where b.code = 'MONTHLY_TURN'));
+    ows.stnd.PROCESS_MESSAGE('I', 'TargetAmnt: ' || TargetAmnt);
+    return TargetAmnt;
+  end IF;   
+  EXCEPTION WHEN NO_DATA_FOUND THEN return TargetAmnt;
+  --End Merchant Monthly Fee--
+  
+  
   RETURN 0;
 end;
